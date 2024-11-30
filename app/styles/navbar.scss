@@ -1,0 +1,82 @@
+@use "colors";
+@use "texts";
+@use "helpful";
+
+#navbar {
+  position: relative;
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 76px;
+
+  #menus {
+    @extend .absolute-fill;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+
+      position: relative;
+      text-align: center;
+
+      .selected {
+        @extend .body-m-b;
+
+        opacity: 0;
+      }
+
+      .unselected {
+        @extend .body-m;
+        @extend .absolute-fill;
+
+        opacity: 1;
+        color: colors.$gs-1-t70;
+      }
+
+      .indicator {
+        display: none;
+        width: 100%;
+        height: 2px;
+        border-radius: 1px;
+        background-color: colors.$gs-1;
+      }
+
+      &.selected {
+        margin-bottom: -4px;
+
+        .selected {
+          opacity: 1;
+        }
+
+        .unselected {
+          opacity: 0;
+        }
+
+        .indicator {
+          display: block;
+        }
+      }
+    }
+  }
+
+  #links {
+    flex-direction: row;
+    gap: 8px;
+
+    .item {
+      width: 36px;
+      height: 36px;
+      background: colors.$gs-9;
+      border: 1px solid rgba(#ffffff, 0.2);
+      border-radius: 50%;
+    }
+  }
+}

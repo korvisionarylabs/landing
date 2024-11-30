@@ -1,0 +1,35 @@
+@use "colors";
+
+.title-l {
+  font-weight: 700;
+}
+
+.body-m-base {
+  color: colors.$gs-1;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+  line-height: 22px;
+}
+
+.body-m {
+  @extend .body-m-base;
+  font-weight: 400;
+}
+
+.body-m-m {
+  @extend .body-m-base;
+  font-weight: 500;
+}
+
+.body-m-b {
+  @extend .body-m-base;
+  font-weight: 600;
+}
+
+.header-logo {
+  font-weight: 600;
+  color: colors.$gs-1-t70;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  line-height: 2em;
+}
