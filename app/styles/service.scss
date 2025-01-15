@@ -133,6 +133,18 @@
             color: $primary;
           }
         }
+
+        h1 {
+          .optional {
+            @include respond-to-only("desktop-small") {
+              display: none;
+            }
+
+            @include respond-to-only("tablet") {
+              display: none;
+            }
+          }
+        }
       }
 
       .description {
@@ -148,6 +160,12 @@
         &.igc {
           @include respond-to-only("desktop-large") {
             width: 717px;
+          }
+        }
+
+        &.vps {
+          @include respond-to-only("desktop-large") {
+            width: 450px;
           }
         }
 
@@ -239,7 +257,6 @@
 
     .item {
       flex-direction: row;
-      align-items: center;
       gap: 48px;
 
       @include respond-to-only('phone') {
@@ -363,6 +380,588 @@
         @include respond-to-only('phone') {
           flex-direction: column;
           gap: 8px;
+        }
+      }
+    }
+  }
+}
+
+#page.vps {
+  .section.flow {
+    flex-direction: row;
+    align-items: center;
+    align-self: stretch;
+    gap: 24px;
+
+    @include respond-to-down('tablet') {
+      flex-direction: column;
+    }
+
+    .box {
+      align-self: stretch;
+      flex: 1;
+      padding: 28px;
+      gap: 16px;
+      background-color: $gs-8;
+      border: 1px solid $primary;
+      border-radius: 12px;
+
+      white-space: wrap;
+
+      @include respond-to-only('phone') {
+        gap: 28px;
+      }
+
+      .divider {
+        width: 24px;
+        height: 4px;
+        background-color: $primary;
+      }
+
+      &.middle {
+        flex: 1.8;
+      }
+
+      &.first {
+        .list {
+          gap: 8px;
+        }
+      }
+
+      &.middle,
+      &.last {
+        .list {
+          gap: 12px;
+
+          p {
+            span {
+              color: $gs-1;
+            }
+          }
+        }
+      }
+    }
+
+    .symbol {
+      width: 22px;
+      height: 28px;
+
+      rotate: -90deg;
+      margin: -3px 3px;
+
+      background-size: cover;
+      background-image: url("/assets/service/vps/symbol.svg");
+
+      @include respond-to-down('tablet') {
+        rotate: unset;
+        margin: unset;
+      }
+    }
+  }
+
+  .vdorm {
+    align-self: stretch;
+    height: 76dvh;
+    border-radius: 24px;
+    overflow: hidden;
+    gap: 24px;
+
+    align-items: center;
+    justify-content: center;
+
+    white-space: wrap;
+
+    .chip {
+      padding: 8px 12px;
+      background-color: $gs-8;
+      border: 1px solid $gs-7;
+      border-radius: 96px;
+
+      p {
+        color: $primary;
+      }
+    }
+
+    .description {
+      align-items: center;
+      gap: 20px;
+    }
+  }
+
+  .package {
+    align-self: stretch;
+    gap: 36px;
+
+    .title-container {
+      gap: 24px;
+      white-space: wrap;
+
+      .title {
+        gap: 12px;
+
+        &::before {
+          content: '';
+          width: 28px;
+          height: 28px;
+
+          background-size: cover;
+          background-image: url('/assets/service/mediaart/star.svg');
+        }
+      }
+    }
+
+    .items {
+      flex-direction: row;
+      gap: 16px;
+
+      @include respond-to-only('phone') {
+        flex-direction: column;
+      }
+
+      img,
+      video {
+        flex: 1;
+        height: 320px;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 12px;
+        max-height: 320px;
+      }
+    }
+  }
+
+  .pack {
+    flex-direction: row;
+    gap: 32px;
+
+    @include respond-to-down('tablet') {
+      flex-direction: column;
+      gap: 24px
+    }
+
+    .box {
+      flex: 1;
+      gap: 32px;
+      padding: 20px;
+      background-color: $gs-8;
+      border: 1px solid $gs-7;
+      border-radius: 20px;
+      white-space: wrap;
+
+      @include respond-to-only('tablet') {
+        flex-direction: row;
+        padding: 24px;
+        gap: 20px;
+      }
+
+      .thumbnail {
+        height: 220px;
+
+        @include respond-to-only('tablet') {
+          min-width: 200px;
+          max-width: 200px;
+          height: 140px;
+        }
+
+        background-size: cover;
+        background-position: center center;
+        border-radius: 8px;
+
+        &.first {
+          background-image: url("/assets/service/vps/package4.png");
+        }
+
+        &.second {
+          background-image: url("/assets/service/vps/package5.png");
+        }
+
+        &.third {
+          background-image: url("/assets/service/vps/package6.png");
+        }
+
+        img {
+          @extend .absolute-fill;
+          object-fit: cover;
+          overflow: hidden;
+          border-radius: 12px;
+        }
+      }
+
+      .content {
+        gap: 16px;
+        padding: 0 4px;
+      }
+    }
+  }
+
+  .comp {
+    align-self: stretch;
+    gap: 32px;
+
+    .title {
+      flex-direction: row;
+      align-items: center;
+      gap: 32px;
+
+      &::before,
+      &::after {
+        flex: 1;
+        content: '';
+        height: 1px;
+
+        background-color: $gs-6;
+      }
+    }
+
+    .box {
+      flex-direction: row;
+      padding: 32px;
+      gap: 24px;
+      background-color: $gs-8;
+      border: 1px solid $gs-7;
+      border-radius: 12px;
+
+      @include respond-to-only('phone') {
+        flex-direction: column;
+        gap: 32px;
+      }
+
+      .divider {
+        min-width: 1px;
+        min-height: 1px;
+        background-color: $gs-6;
+      }
+
+      .item {
+        flex: 1;
+        align-items: center;
+        gap: 8px;
+
+        &.first {
+          &::before {
+            content: '';
+            width: 40px;
+            height: 40px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-image: url("/assets/service/vps/1.svg");
+          }
+        }
+
+        &.second {
+          &::before {
+            content: '';
+            width: 40px;
+            height: 40px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-image: url("/assets/service/vps/2.svg");
+          }
+        }
+
+        &.third {
+          &::before {
+            content: '';
+            width: 40px;
+            height: 40px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-image: url("/assets/service/vps/3.svg");
+          }
+        }
+
+        .content {
+          align-items: center;
+          gap: 4px;
+
+          h5 {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+#page.vt {
+  padding: 160px 0;
+  gap: 160px;
+
+  @include respond-to-down('tablet') {
+    padding: 100px 0;
+    gap: 120px;
+  }
+
+  .step {
+    flex-direction: row;
+    padding: 32px;
+    gap: 24px;
+    background-color: $gs-8;
+    border: 1px solid $gs-7;
+    border-radius: 12px;
+
+    white-space: wrap;
+
+    @include respond-to-only('phone') {
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .divider {
+      min-width: 1px;
+      min-height: 1px;
+      background-color: $gs-6;
+    }
+
+    .item {
+      align-items: center;
+      gap: 16px;
+      text-align: center;
+
+      h5 {
+        color: $primary;
+      }
+
+      .number {
+        width: 36px;
+        height: 36px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 18px;
+        background-color: $gs-7;
+        border: 1px solid $primary;
+      }
+
+      .content {
+        align-items: center;
+        gap: 8px;
+
+        .primary {
+          color: $gs-1;
+        }
+      }
+    }
+  }
+
+  .main {
+    gap: 36px;
+
+    @include respond-to-only('desktop-small') {
+      gap: 68px;
+    }
+
+    @include respond-to-only('tablet') {
+      gap: 68px;
+    }
+
+    @include respond-to-only('phone') {
+      gap: 40px;
+    }
+
+    .title-container {
+      flex-direction: row;
+
+      gap: 64px;
+
+      @include respond-to-down('desktop-small') {
+        flex-direction: column;
+      }
+
+      @include respond-to-only('phone') {
+        gap: 24px;
+        text-align: center;
+        align-items: center;
+      }
+
+      .title {
+        align-items: flex-start;
+        gap: 12px;
+
+        @include respond-to-only('phone') {
+          align-items: center;
+        }
+
+        .chip {
+          padding: 8px 12px;
+          background-color: $gs-8;
+          border: 1px solid $gs-7;
+          border-radius: 96px;
+
+          p {
+            color: $primary;
+          }
+        }
+      }
+
+      .content {
+        gap: 16px;
+        white-space: wrap;
+      }
+    }
+
+    .grid {
+      gap: 16px;
+
+      .row {
+        flex-direction: row;
+        gap: 16px;
+
+        .thumbnail {
+          flex: 1;
+          height: 256px;
+          border-radius: 12px;
+
+          background-size: cover;
+          background-position: center center;
+
+          &.first {
+            background-image: url("/assets/service/ec/1.jpg");
+          }
+
+          &.second {
+            background-image: url("/assets/service/ec/2.jpg");
+          }
+
+          &.third {
+            background-image: url("/assets/service/ec/3.jpg");
+          }
+
+          &.fourth {
+            background-image: url("/assets/service/ec/4.jpg");
+          }
+        }
+      }
+    }
+  }
+
+  .program {
+    flex-direction: row;
+    align-self: stretch;
+    gap: 64px;
+
+    @include respond-to-down('desktop-small') {
+      gap: 48px;
+    }
+
+    @include respond-to-only('phone') {
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .divider {
+      min-width: 1px;
+      min-height: 1px;
+      background-color: $gs-6;
+
+      @include respond-to-down('tablet') {
+        display: none;
+      }
+    }
+
+    .left {
+      flex: 1;
+      gap: 32px;
+
+      .title-container {
+        gap: 24px;
+        padding: 16px 0;
+        white-space: wrap;
+
+        .title {
+          gap: 12px;
+
+          &::before {
+            content: '';
+            width: 28px;
+            height: 28px;
+
+            background-size: cover;
+            background-image: url('/assets/service/mediaart/star.svg');
+          }
+        }
+      }
+
+      .items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+
+        @include respond-to-down('desktop-small') {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include respond-to-only('tablet') {
+          grid-template-columns: repeat(1, 1fr);
+        }
+
+        .item {
+          padding: 12px 0;
+          border-radius: 32px;
+          background-color: $gs-8;
+          border: 1px solid $gs-7;
+
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    .right {
+      align-self: flex-start;
+      padding: 32px;
+      gap: 20px;
+      background-color: $gs-8;
+      border: 1px solid $gs-7;
+      border-radius: 12px;
+
+      @include respond-to-only('phone') {
+        align-self: unset;
+      }
+
+      .symbol {
+        width: 64px;
+        height: 16px;
+
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url("/assets/service/mediaart/symbol.svg");
+      }
+
+      .item {
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+
+        .circle {
+          width: 64px;
+          height: 64px;
+          border-radius: 32px;
+          background-color: $gs-8;
+          border: 1px solid $primary;
+
+          background-position: center center;
+          background-repeat: no-repeat;
+
+          &.first {
+            background-image: url("/assets/service/ec/1.svg");
+          }
+
+          &.second {
+            background-image: url("/assets/service/ec/2.svg");
+          }
+
+          &.third {
+            background-image: url("/assets/service/ec/3.svg");
+          }
+
+          &.fourth {
+            background-image: url("/assets/service/ec/4.svg");
+          }
+
+          &.fifth {
+            background-image: url("/assets/service/ec/5.svg");
+          }
         }
       }
     }

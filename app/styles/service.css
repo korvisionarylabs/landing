@@ -1,4 +1,4 @@
-.absolute-fill {
+.absolute-fill, #page.vps .pack .box .thumbnail img {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -282,6 +282,16 @@
 #page.mp .section.top .info .title .chip p {
   color: #C670FF;
 }
+@media (min-width: 1200px) and (max-width: 1599px) {
+  #page.mp .section.top .info .title h1 .optional {
+    display: none;
+  }
+}
+@media (min-width: 810px) and (max-width: 1199px) {
+  #page.mp .section.top .info .title h1 .optional {
+    display: none;
+  }
+}
 #page.mp .section.top .info .description {
   gap: 16px;
   white-space: wrap;
@@ -294,6 +304,11 @@
 @media (min-width: 1600px) and (max-width: 999998px) {
   #page.mp .section.top .info .description.igc {
     width: 717px;
+  }
+}
+@media (min-width: 1600px) and (max-width: 999998px) {
+  #page.mp .section.top .info .description.vps {
+    width: 450px;
   }
 }
 @media (min-width: 0px) and (max-width: 809px) {
@@ -357,7 +372,6 @@
 }
 #page.mp .section.middle .item {
   flex-direction: row;
-  align-items: center;
   gap: 48px;
 }
 @media (min-width: 0px) and (max-width: 809px) {
@@ -467,6 +481,505 @@
     flex-direction: column;
     gap: 8px;
   }
+}
+
+#page.vps .section.flow {
+  flex-direction: row;
+  align-items: center;
+  align-self: stretch;
+  gap: 24px;
+}
+@media (max-width: 1199px) {
+  #page.vps .section.flow {
+    flex-direction: column;
+  }
+}
+#page.vps .section.flow .box {
+  align-self: stretch;
+  flex: 1;
+  padding: 28px;
+  gap: 16px;
+  background-color: #191A1F;
+  border: 1px solid #C670FF;
+  border-radius: 12px;
+  white-space: wrap;
+}
+@media (min-width: 0px) and (max-width: 809px) {
+  #page.vps .section.flow .box {
+    gap: 28px;
+  }
+}
+#page.vps .section.flow .box .divider {
+  width: 24px;
+  height: 4px;
+  background-color: #C670FF;
+}
+#page.vps .section.flow .box.middle {
+  flex: 1.8;
+}
+#page.vps .section.flow .box.first .list {
+  gap: 8px;
+}
+#page.vps .section.flow .box.middle .list, #page.vps .section.flow .box.last .list {
+  gap: 12px;
+}
+#page.vps .section.flow .box.middle .list p span, #page.vps .section.flow .box.last .list p span {
+  color: #FFFFFF;
+}
+#page.vps .section.flow .symbol {
+  width: 22px;
+  height: 28px;
+  rotate: -90deg;
+  margin: -3px 3px;
+  background-size: cover;
+  background-image: url("/assets/service/vps/symbol.svg");
+}
+@media (max-width: 1199px) {
+  #page.vps .section.flow .symbol {
+    rotate: unset;
+    margin: unset;
+  }
+}
+#page.vps .vdorm {
+  align-self: stretch;
+  height: 76dvh;
+  border-radius: 24px;
+  overflow: hidden;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  white-space: wrap;
+}
+#page.vps .vdorm .chip {
+  padding: 8px 12px;
+  background-color: #191A1F;
+  border: 1px solid #25262E;
+  border-radius: 96px;
+}
+#page.vps .vdorm .chip p {
+  color: #C670FF;
+}
+#page.vps .vdorm .description {
+  align-items: center;
+  gap: 20px;
+}
+#page.vps .package {
+  align-self: stretch;
+  gap: 36px;
+}
+#page.vps .package .title-container {
+  gap: 24px;
+  white-space: wrap;
+}
+#page.vps .package .title-container .title {
+  gap: 12px;
+}
+#page.vps .package .title-container .title::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  background-size: cover;
+  background-image: url("/assets/service/mediaart/star.svg");
+}
+#page.vps .package .items {
+  flex-direction: row;
+  gap: 16px;
+}
+@media (min-width: 0px) and (max-width: 809px) {
+  #page.vps .package .items {
+    flex-direction: column;
+  }
+}
+#page.vps .package .items img,
+#page.vps .package .items video {
+  flex: 1;
+  height: 320px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 12px;
+  max-height: 320px;
+}
+#page.vps .pack {
+  flex-direction: row;
+  gap: 32px;
+}
+@media (max-width: 1199px) {
+  #page.vps .pack {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+#page.vps .pack .box {
+  flex: 1;
+  gap: 32px;
+  padding: 20px;
+  background-color: #191A1F;
+  border: 1px solid #25262E;
+  border-radius: 20px;
+  white-space: wrap;
+}
+@media (min-width: 810px) and (max-width: 1199px) {
+  #page.vps .pack .box {
+    flex-direction: row;
+    padding: 24px;
+    gap: 20px;
+  }
+}
+#page.vps .pack .box .thumbnail {
+  height: 220px;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 8px;
+}
+@media (min-width: 810px) and (max-width: 1199px) {
+  #page.vps .pack .box .thumbnail {
+    min-width: 200px;
+    max-width: 200px;
+    height: 140px;
+  }
+}
+#page.vps .pack .box .thumbnail.first {
+  background-image: url("/assets/service/vps/package4.png");
+}
+#page.vps .pack .box .thumbnail.second {
+  background-image: url("/assets/service/vps/package5.png");
+}
+#page.vps .pack .box .thumbnail.third {
+  background-image: url("/assets/service/vps/package6.png");
+}
+#page.vps .pack .box .thumbnail img {
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 12px;
+}
+#page.vps .pack .box .content {
+  gap: 16px;
+  padding: 0 4px;
+}
+#page.vps .comp {
+  align-self: stretch;
+  gap: 32px;
+}
+#page.vps .comp .title {
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+}
+#page.vps .comp .title::before, #page.vps .comp .title::after {
+  flex: 1;
+  content: "";
+  height: 1px;
+  background-color: #3C3E4C;
+}
+#page.vps .comp .box {
+  flex-direction: row;
+  padding: 32px;
+  gap: 24px;
+  background-color: #191A1F;
+  border: 1px solid #25262E;
+  border-radius: 12px;
+}
+@media (min-width: 0px) and (max-width: 809px) {
+  #page.vps .comp .box {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+#page.vps .comp .box .divider {
+  min-width: 1px;
+  min-height: 1px;
+  background-color: #3C3E4C;
+}
+#page.vps .comp .box .item {
+  flex: 1;
+  align-items: center;
+  gap: 8px;
+}
+#page.vps .comp .box .item.first::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/service/vps/1.svg");
+}
+#page.vps .comp .box .item.second::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/service/vps/2.svg");
+}
+#page.vps .comp .box .item.third::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/service/vps/3.svg");
+}
+#page.vps .comp .box .item .content {
+  align-items: center;
+  gap: 4px;
+}
+#page.vps .comp .box .item .content h5 {
+  color: #C670FF;
+}
+
+#page.vt {
+  padding: 160px 0;
+  gap: 160px;
+}
+@media (max-width: 1199px) {
+  #page.vt {
+    padding: 100px 0;
+    gap: 120px;
+  }
+}
+#page.vt .step {
+  flex-direction: row;
+  padding: 32px;
+  gap: 24px;
+  background-color: #191A1F;
+  border: 1px solid #25262E;
+  border-radius: 12px;
+  white-space: wrap;
+}
+@media (min-width: 0px) and (max-width: 809px) {
+  #page.vt .step {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+#page.vt .step .divider {
+  min-width: 1px;
+  min-height: 1px;
+  background-color: #3C3E4C;
+}
+#page.vt .step .item {
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+#page.vt .step .item h5 {
+  color: #C670FF;
+}
+#page.vt .step .item .number {
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  background-color: #25262E;
+  border: 1px solid #C670FF;
+}
+#page.vt .step .item .content {
+  align-items: center;
+  gap: 8px;
+}
+#page.vt .step .item .content .primary {
+  color: #FFFFFF;
+}
+#page.vt .main {
+  gap: 36px;
+}
+@media (min-width: 1200px) and (max-width: 1599px) {
+  #page.vt .main {
+    gap: 68px;
+  }
+}
+@media (min-width: 810px) and (max-width: 1199px) {
+  #page.vt .main {
+    gap: 68px;
+  }
+}
+@media (min-width: 0px) and (max-width: 809px) {
+  #page.vt .main {
+    gap: 40px;
+  }
+}
+#page.vt .main .title-container {
+  flex-direction: row;
+  gap: 64px;
+}
+@media (max-width: 1599px) {
+  #page.vt .main .title-container {
+    flex-direction: column;
+  }
+}
+@media (min-width: 0px) and (max-width: 809px) {
+  #page.vt .main .title-container {
+    gap: 24px;
+    text-align: center;
+    align-items: center;
+  }
+}
+#page.vt .main .title-container .title {
+  align-items: flex-start;
+  gap: 12px;
+}
+@media (min-width: 0px) and (max-width: 809px) {
+  #page.vt .main .title-container .title {
+    align-items: center;
+  }
+}
+#page.vt .main .title-container .title .chip {
+  padding: 8px 12px;
+  background-color: #191A1F;
+  border: 1px solid #25262E;
+  border-radius: 96px;
+}
+#page.vt .main .title-container .title .chip p {
+  color: #C670FF;
+}
+#page.vt .main .title-container .content {
+  gap: 16px;
+  white-space: wrap;
+}
+#page.vt .main .grid {
+  gap: 16px;
+}
+#page.vt .main .grid .row {
+  flex-direction: row;
+  gap: 16px;
+}
+#page.vt .main .grid .row .thumbnail {
+  flex: 1;
+  height: 256px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center center;
+}
+#page.vt .main .grid .row .thumbnail.first {
+  background-image: url("/assets/service/ec/1.jpg");
+}
+#page.vt .main .grid .row .thumbnail.second {
+  background-image: url("/assets/service/ec/2.jpg");
+}
+#page.vt .main .grid .row .thumbnail.third {
+  background-image: url("/assets/service/ec/3.jpg");
+}
+#page.vt .main .grid .row .thumbnail.fourth {
+  background-image: url("/assets/service/ec/4.jpg");
+}
+#page.vt .program {
+  flex-direction: row;
+  align-self: stretch;
+  gap: 64px;
+}
+@media (max-width: 1599px) {
+  #page.vt .program {
+    gap: 48px;
+  }
+}
+@media (min-width: 0px) and (max-width: 809px) {
+  #page.vt .program {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+#page.vt .program .divider {
+  min-width: 1px;
+  min-height: 1px;
+  background-color: #3C3E4C;
+}
+@media (max-width: 1199px) {
+  #page.vt .program .divider {
+    display: none;
+  }
+}
+#page.vt .program .left {
+  flex: 1;
+  gap: 32px;
+}
+#page.vt .program .left .title-container {
+  gap: 24px;
+  padding: 16px 0;
+  white-space: wrap;
+}
+#page.vt .program .left .title-container .title {
+  gap: 12px;
+}
+#page.vt .program .left .title-container .title::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  background-size: cover;
+  background-image: url("/assets/service/mediaart/star.svg");
+}
+#page.vt .program .left .items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+@media (max-width: 1599px) {
+  #page.vt .program .left .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 810px) and (max-width: 1199px) {
+  #page.vt .program .left .items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+#page.vt .program .left .items .item {
+  padding: 12px 0;
+  border-radius: 32px;
+  background-color: #191A1F;
+  border: 1px solid #25262E;
+  align-items: center;
+  justify-content: center;
+}
+#page.vt .program .right {
+  align-self: flex-start;
+  padding: 32px;
+  gap: 20px;
+  background-color: #191A1F;
+  border: 1px solid #25262E;
+  border-radius: 12px;
+}
+@media (min-width: 0px) and (max-width: 809px) {
+  #page.vt .program .right {
+    align-self: unset;
+  }
+}
+#page.vt .program .right .symbol {
+  width: 64px;
+  height: 16px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/service/mediaart/symbol.svg");
+}
+#page.vt .program .right .item {
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+#page.vt .program .right .item .circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  background-color: #191A1F;
+  border: 1px solid #C670FF;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#page.vt .program .right .item .circle.first {
+  background-image: url("/assets/service/ec/1.svg");
+}
+#page.vt .program .right .item .circle.second {
+  background-image: url("/assets/service/ec/2.svg");
+}
+#page.vt .program .right .item .circle.third {
+  background-image: url("/assets/service/ec/3.svg");
+}
+#page.vt .program .right .item .circle.fourth {
+  background-image: url("/assets/service/ec/4.svg");
+}
+#page.vt .program .right .item .circle.fifth {
+  background-image: url("/assets/service/ec/5.svg");
 }
 
 /*# sourceMappingURL=service.css.map */
