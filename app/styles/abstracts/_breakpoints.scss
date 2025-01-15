@@ -9,9 +9,47 @@ $breakpoints: (
   'phone': 0px
 );
 
+$breakpoints-up: (
+  'desktop-large': 1600px,
+  'desktop-small': 1200px,
+  'tablet': 810px,
+  'phone': 0px
+);
+
+$breakpoints-down: (
+  'desktop-large': 999999px,
+  'desktop-small': 1600px,
+  'tablet': 1200px,
+  'phone': 810px
+);
+
 @mixin respond-to($breakpoint) {
   @if map.has-key($breakpoints, $breakpoint) {
     @media (min-width: map.get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}
+
+@mixin respond-to-only($breakpoint) {
+  @if map.has-key($breakpoints, $breakpoint) {
+    @media (min-width: map.get($breakpoints-up, $breakpoint)) and (max-width: (map.get($breakpoints-down, $breakpoint) - 1)) {
+      @content;
+    }
+  }
+}
+
+@mixin respond-to-up($breakpoint) {
+  @if map.has-key($breakpoints-up, $breakpoint) {
+    @media (min-width: map.get($breakpoints-up, $breakpoint)) {
+      @content;
+    }
+  }
+}
+
+@mixin respond-to-down($breakpoint) {
+  @if map.has-key($breakpoints-down, $breakpoint) {
+    @media (max-width: (map.get($breakpoints-down, $breakpoint) - 1)) {
       @content;
     }
   }
