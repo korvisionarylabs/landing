@@ -1,0 +1,50 @@
+@use 'abstracts' as *;
+
+#page.news {
+  padding: 100px 0 100px 0;
+
+  @include respond-to('desktop-small') {
+    padding: 108px 0 60px 0;
+  }
+
+  @include respond-to('desktop-large') {
+    padding: 128px 0 64px 0;
+  }
+
+  .header {
+    flex-direction: row;
+    align-self: stretch;
+    justify-content: space-between;
+    align-items: center;
+
+    .category {
+      flex-direction: row;
+      padding: 8px;
+      gap: 4px;
+      border-radius: 96px;
+
+      background-color: $gs-8;
+      border: 1px solid $gs-6;
+
+      .item {
+        padding: 12px 16px;
+        background-color: $gs-7;
+        border-radius: 96px;
+        cursor: pointer;
+
+        &.selected {
+          background-color: $gs-1;
+
+          p {
+            @extend .body-s-b;
+            color: $gs-7;
+          }
+        }
+
+        p {
+          @extend .body-s;
+        }
+      }
+    }
+  }
+}
