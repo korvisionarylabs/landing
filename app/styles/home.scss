@@ -1,0 +1,749 @@
+@use 'abstracts' as *;
+
+#page.main {
+  .title-container {
+    align-self: stretch;
+    align-items: center;
+    gap: 42px;
+
+    @include respond-to('tablet') {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: unset;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      border: 1px solid $gs-1-t70;
+
+      width: 96px;
+      height: 12px;
+
+
+      @include respond-to('tablet') {
+        width: 12px;
+        height: 96px;
+        margin: 16px 2px;
+      }
+
+      @include respond-to('desktop-small') {
+        width: 16px;
+        height: 128px;
+        margin: 0px;
+      }
+    }
+
+    &::before {
+      border-bottom-width: 0;
+
+      @include respond-to('tablet') {
+        border-bottom-width: 1px;
+        border-right-width: 0;
+      }
+    }
+
+    &::after {
+      border-top-width: 0;
+
+      @include respond-to('tablet') {
+        border-top-width: 1px;
+        border-left-width: 0;
+      }
+    }
+
+    .title {
+      align-items: center;
+      text-align: center;
+      gap: 16px;
+
+      @include respond-to('tablet') {
+        align-items: unset;
+        text-align: unset;
+      }
+
+      @include respond-to('desktop-small') {
+        gap: 20px;
+      }
+
+      @include respond-to('desktop-large') {
+        gap: 32px;
+      }
+
+      >h1 {
+        color: $gs-1-t70;
+        width: 220px;
+        word-break: keep-all;
+        white-space: wrap;
+
+        @include respond-to('tablet') {
+          width: unset;
+        }
+      }
+
+      .inline {
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+
+        @include respond-to('tablet') {
+          flex-direction: row;
+          text-align: unset;
+          gap: 32px;
+        }
+
+        p {
+          color: $gs-1-t70;
+        }
+      }
+    }
+  }
+}
+
+#page.vision {
+  padding: 100px 0 100px 0;
+  gap: 48;
+
+  @include respond-to('desktop-small') {
+    padding: 108px 0 60px 0;
+    gap: 60px;
+  }
+
+  @include respond-to('desktop-large') {
+    padding: 128px 0 72px 0;
+  }
+
+  .container {
+    flex: 1;
+  }
+
+  .title-container {
+    gap: 24px;
+
+    @include respond-to('desktop-small') {
+      gap: 48px;
+    }
+
+    @include respond-to('desktop-small') {
+      flex-direction: row;
+    }
+
+    .title {
+      align-items: center;
+
+      @include respond-to('tablet') {
+        flex-direction: row;
+        gap: 14px;
+      }
+
+      @include respond-to('desktop-small') {
+        gap: 16px;
+      }
+
+      @include respond-to('desktop-large') {
+        gap: 24px;
+      }
+    }
+
+    .content {
+      align-items: center;
+      gap: 16px;
+
+      @include respond-to('desktop-small') {
+        align-items: unset;
+      }
+
+      .inline {
+        align-items: center;
+        gap: 20px;
+
+        @include respond-to('desktop-small') {
+          align-items: unset;
+        }
+      }
+    }
+  }
+}
+
+#page.xr {
+  gap: 40px;
+
+  .title-container {
+    align-items: center;
+    gap: 16px;
+
+    white-space: wrap;
+    text-align: center;
+
+    .content {
+      align-items: center;
+      gap: 20px;
+
+      p {
+        color: $gs-1;
+      }
+
+      &.two {
+        display: none;
+      }
+
+      @include respond-to('tablet') {
+        &.one {
+          display: none;
+        }
+
+        &.two {
+          display: flex;
+        }
+      }
+
+      @include respond-to('desktop-small') {
+        &.one {
+          display: flex;
+        }
+
+        &.two {
+          display: none;
+        }
+      }
+    }
+
+  }
+
+  .items {
+    align-items: center;
+
+    @include respond-to('tablet') {
+      flex-direction: row;
+    }
+
+    .item {
+      padding: 16px 20px;
+      border: 1px solid $gs-1;
+      border-radius: 96px;
+    }
+
+    .line {
+      width: 0px;
+      height: 16px;
+      background-color: $gs-1;
+
+      @include respond-to('tablet') {
+        width: 20px;
+        height: 1px;
+      }
+    }
+  }
+}
+
+#page.xr-production {
+  align-items: stretch !important;
+
+  padding: 100px 0;
+  gap: 100px;
+
+  @include respond-to('desktop-small') {
+    padding: 108px 0;
+    gap: 108px;
+  }
+
+  @include respond-to('desktop-large') {
+    padding: 128px 0;
+    gap: 128px;
+  }
+
+  .section {
+    gap: 48px;
+
+    .title-container {
+      align-items: center;
+      text-align: center;
+      gap: 24px;
+
+      @include respond-to('desktop-small') {
+        align-items: unset;
+        text-align: unset;
+      }
+
+      h1 {
+        white-space: wrap;
+      }
+
+      h5 {
+        color: $gs-5;
+      }
+
+      .title {
+        align-items: center;
+        gap: 10px;
+
+        @include respond-to('desktop-small') {
+          align-items: unset;
+        }
+      }
+
+      .content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
+        @include respond-to('desktop-small') {
+          flex-direction: row;
+        }
+
+        >p {
+          white-space: wrap;
+
+          @include respond-to('desktop-small') {
+            width: 820px;
+          }
+        }
+      }
+
+      .more {
+        padding: 10px 16px;
+        border: 1px solid $primary;
+        border-radius: 96px;
+
+        p {
+          color: $primary;
+        }
+      }
+    }
+
+    .content {
+      gap: 24px;
+
+      @include respond-to('desktop-small') {
+        flex-direction: row;
+        gap: 16px;
+      }
+
+
+      .card {
+        flex: 1;
+        border-radius: 24px;
+        background-color: $gs-8;
+
+        padding: 24px;
+        gap: 24px;
+
+        @include respond-to('tablet') {
+          flex-direction: row;
+          gap: 16px;
+        }
+
+        @include respond-to('desktop-small') {
+          flex-direction: column;
+          gap: 12px;
+        }
+
+        @include respond-to('desktop-large') {
+          flex-direction: row;
+          gap: 16px;
+        }
+
+        .images {
+          gap: 12px;
+
+          @include respond-to('tablet') {
+            width: 260px;
+          }
+
+          @include respond-to('desktop-small') {
+            flex-direction: row;
+            width: unset;
+            height: 220px;
+          }
+
+          @include respond-to('desktop-large') {
+            flex-direction: column;
+            width: 260px;
+            height: unset;
+          }
+
+          .image {
+            border-radius: 12px;
+            overflow: hidden;
+
+            height: 180px;
+
+            @include respond-to('tablet') {
+              height: unset;
+              flex: 1;
+            }
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+
+        .body {
+          flex: 1;
+          padding: 12px 8px;
+          gap: 24px;
+
+          white-space: wrap;
+
+          .title {
+            gap: 12px;
+
+            &::before {
+              content: '';
+              width: 24px;
+              height: 24px;
+
+              background-image: url('/assets/star.svg');
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#page.vdorm {
+  align-items: flex-start !important;
+  gap: 24px;
+  white-space: wrap;
+
+  @include respond-to('tablet') {
+    gap: 40px;
+  }
+
+  @include respond-to('desktop-large') {
+    gap: 60px;
+  }
+
+  .title {
+    :last-child {
+      color: $gs-1-t70;
+    }
+  }
+
+  .content {
+    gap: 20px;
+  }
+}
+
+#page.portfolio {
+  padding: 100px 0 100px 0;
+  gap: 40px;
+
+  @include respond-to('desktop-small') {
+    padding: 108px 0 60px 0;
+    gap: 60px;
+  }
+
+  @include respond-to('desktop-large') {
+    padding: 128px 0 72px 0;
+  }
+
+  .title-container {
+    align-self: stretch;
+    gap: 32px;
+
+    .title {
+      align-items: center;
+      text-align: center;
+      white-space: wrap;
+      gap: 16px;
+    }
+
+    .sub {
+      flex-direction: row;
+      align-self: stretch;
+      align-items: center;
+      justify-content: center;
+
+      @include respond-to('tablet') {
+        justify-content: space-between;
+      }
+
+      .control {
+        flex-direction: row;
+        align-items: center;
+        gap: 4px;
+
+        padding: 10px 16px;
+        border: 1px solid $primary;
+        border-radius: 96px;
+        cursor: pointer;
+
+        display: none;
+
+        @include respond-to('tablet') {
+          display: flex;
+        }
+
+        p {
+          color: $primary;
+        }
+
+        &.left {
+          &::before {
+            content: '';
+            width: 12px;
+            height: 12px;
+            margin: 3px;
+
+            background-image: url('/assets/left.svg');
+          }
+        }
+
+        &.right {
+          &::after {
+            content: '';
+            width: 12px;
+            height: 12px;
+            margin: 3px;
+
+            background-image: url('/assets/right.svg');
+          }
+        }
+      }
+
+      .selector {
+        flex-direction: row;
+        gap: 4px;
+        padding: 8px;
+        border-radius: 96px;
+        border: 1px solid $gs-6;
+
+        .select {
+          background-color: $gs-7;
+          padding: 12px 16px;
+          border-radius: 96px;
+          cursor: pointer;
+
+          p {
+            @extend .body-s;
+          }
+
+          &.selected {
+            background-color: white;
+
+            p {
+              @extend .body-s-b;
+              color: $gs-7;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    flex: 1;
+  }
+}
+
+#page.partners {
+  padding: 100px 0 100px 0;
+  gap: 52px;
+
+  @include respond-to('tablet') {
+    gap: 72px;
+  }
+
+  @include respond-to('desktop-small') {
+    padding: 108px 0 60px 0;
+  }
+
+  @include respond-to('desktop-large') {
+    padding: 128px 0 72px 0;
+  }
+
+  .title {
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .content {
+    gap: 26px;
+
+    @include respond-to('tablet') {
+      gap: 34px;
+    }
+
+    img {
+      height: 96px;
+      object-fit: contain;
+    }
+  }
+}
+
+#page.contact {
+  flex-direction: row;
+  padding: 100px 0;
+
+  @include respond-to('desktop-small') {
+    padding: 108px 0 60px 0;
+  }
+
+  @include respond-to('desktop-large') {
+    padding: 0;
+  }
+
+  .container {
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+
+    @include respond-to('desktop-small') {
+      flex-direction: row;
+    }
+
+    .left {
+      flex: 1;
+      align-self: stretch;
+      gap: 40px;
+
+      .title {
+        align-items: center;
+        text-align: center;
+        white-space: wrap;
+        gap: 16px;
+
+        @include respond-to('tablet') {
+          align-items: flex-start;
+          text-align: left;
+        }
+      }
+
+      .form {
+        gap: 20px;
+
+        .who {
+          gap: 16px;
+        }
+
+        .group {
+          flex-direction: column;
+
+          @include respond-to('tablet') {
+            flex-direction: row;
+          }
+
+          gap: 16px;
+        }
+
+        .mix {
+          flex: 1;
+          gap: 8px;
+
+          .name {
+            flex-direction: row;
+            gap: 4px;
+            @extend .body-s;
+
+            .required {
+              color: red;
+            }
+          }
+
+          input,
+          textarea {
+            @extend .body-s;
+            padding: 12px 16px;
+            border: none;
+            outline: none;
+            border-radius: 4px;
+            border-bottom: 3px solid $gs-6;
+            background-color: $gs-7;
+            color: $gs-1;
+
+            &::placeholder {
+              color: $gs-5;
+            }
+          }
+
+          textarea {
+            resize: none;
+            height: 148px;
+          }
+        }
+      }
+
+      .submit {
+        flex-direction: row;
+        align-items: center;
+        align-self: flex-start;
+        gap: 4px;
+
+        padding: 10px 16px;
+        border-radius: 96px;
+        border: 1px solid $primary;
+        cursor: pointer;
+
+        &::after {
+          content: '';
+          width: 13px;
+          height: 11.5px;
+          margin: 3px 3px 4px 2px;
+
+          background-image: url('/assets/send.svg');
+        }
+
+        p {
+          color: $primary;
+        }
+      }
+    }
+
+    .divider {
+      min-width: 1px;
+      min-height: 1px;
+      align-self: stretch;
+      background-color: $gs-7;
+    }
+
+    .right {
+      align-self: stretch;
+      gap: 32px;
+
+      @include respond-to('desktop-small') {
+        min-width: 400px;
+      }
+
+      @include respond-to('desktop-large') {
+        min-width: 480px;
+      }
+
+      .content {
+        gap: 20px;
+
+        .information {
+          gap: 8px;
+
+          .info {
+            flex-direction: row;
+            gap: 12px;
+
+            a {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      .map {
+        flex: 1;
+        background-color: $gs-7;
+        border-radius: 12px;
+
+        min-height: 280px;
+
+        @include respond-to('desktop-small') {
+          min-height: unset;
+        }
+      }
+    }
+  }
+}

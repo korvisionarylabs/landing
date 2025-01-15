@@ -23,27 +23,45 @@ const pages = [
 
 export default function Navbar() {
   return (
-    <div>
-      <div id="navbar">
-        <p className="header-logo">VisionaryLabs</p>
-        <div id="menus">
-          {pages.map((page) => (
-            <NavLink
-              key={page.to}
-              to={page.to}
-              className={({ isActive }) => ["menu", isActive ? "selected" : ""].join(" ")}>
-              <p className="selected">{page.name}</p>
-              <p className="unselected">{page.name}</p>
-              <div className="indicator" />
-            </NavLink>
-          ))}
-        </div>
-        <div id="links">
-          <div className="item" />
-          <div className="item" />
+    <>
+      <div id="navbar-container">
+        <div id="navbar">
+          <p id="header-logo" className="header-logo">
+            VisionaryLabs
+          </p>
+          <div id="menus">
+            {pages.map((page) => (
+              <NavLink
+                key={page.to}
+                to={page.to}
+                className={({ isActive }) => ["menu", isActive ? "selected" : ""].join(" ")}>
+                <p className="selected">{page.name}</p>
+                <p className="unselected">{page.name}</p>
+                <div className="indicator" />
+              </NavLink>
+            ))}
+          </div>
+          <div id="links">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              className="item facebook"
+              rel="noreferrer"
+              aria-label="Facebook">
+              {/* Facebook */}
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              className="item instagram"
+              rel="noreferrer"
+              aria-label="Instagram">
+              {/* Instagram */}
+            </a>
+          </div>
         </div>
       </div>
       <Outlet />
-    </div>
+    </>
   );
 }

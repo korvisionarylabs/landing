@@ -9,7 +9,7 @@
     "build:remix": "remix vite:build",
     "dev": "run-p dev:*",
     "dev:css": "sass --watch app/:app/",
-    "dev:remix": "remix vite:dev",
+    "dev:remix": "remix vite:dev --host",
     "start": "remix-serve ./build/server/index.js",
     "lint": "biome check --write --no-errors-on-unmatched --diagnostic-level=error --files-ignore-unknown=true .",
     "lint:unsafe": "biome check --write --unsafe --no-errors-on-unmatched --diagnostic-level=error --files-ignore-unknown=true .",

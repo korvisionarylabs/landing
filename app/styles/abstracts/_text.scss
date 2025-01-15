@@ -1,0 +1,146 @@
+@use 'breakpoints' as *;
+@use 'colors' as *;
+
+.title-l {
+  color: $gs-1;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+
+  @include respond-to('phone') {
+    font-size: 52px;
+    line-height: 60px;
+  }
+
+  @include respond-to('tablet') {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  @include respond-to('desktop-small') {
+    font-size: 80px;
+    line-height: 80px;
+  }
+
+  @include respond-to('desktop-large') {
+    font-size: 112px;
+    line-height: 112px;
+  }
+}
+
+.title-lm {
+  color: $gs-1;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+
+  @include respond-to('phone') {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  @include respond-to('tablet') {
+    font-size: 60px;
+    line-height: 76px;
+  }
+
+  @include respond-to('desktop-small') {
+    font-size: 92px;
+    line-height: 108px;
+  }
+}
+
+.title-m {
+  color: $gs-1;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  font-size: 40px;
+  line-height: 44px;
+}
+
+.title-ms {
+  color: $gs-1;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.title-s {
+  color: $gs-1;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.body-s {
+  color: $gs-4;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.body-s-b {
+  @extend .body-s;
+  font-weight: 600;
+}
+
+.body-m {
+  color: $gs-1;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+
+  @include respond-to('phone') {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  @include respond-to('tablet') {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.body-m-m {
+  @extend .body-m;
+  font-weight: 500;
+}
+
+.body-m-b {
+  @extend .body-m;
+  font-weight: 600;
+}
+
+.header-logo {
+  color: $gs-1-t70;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  font-size: 18px;
+  line-height: 2em;
+}
+
+
+.link {
+  color: $gs-5;
+
+  &:hover {
+    color: $gs-4;
+    text-decoration: underline;
+  }
+}
+
+.link-2 {
+  color: $gs-4;
+
+  &:hover {
+    color: $gs-4;
+    text-decoration: underline;
+  }
+}
+
+
+.gradient {
+  background: linear-gradient(90deg, $gs-1 0%, $primary 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
