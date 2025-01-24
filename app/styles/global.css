@@ -212,9 +212,9 @@ div {
   justify-content: center;
   max-width: 1420px;
 }
-@media (min-width: 0px) {
+@media (min-width: 1200px) {
   #pages #page-container #page {
-    width: calc(100% - 20px - 20px);
+    width: calc(100% - 84px - 84px);
   }
 }
 @media (min-width: 810px) {
@@ -222,9 +222,9 @@ div {
     width: calc(100% - 32px - 32px);
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 0px) {
   #pages #page-container #page {
-    width: calc(100% - 84px - 84px);
+    width: calc(100% - 20px - 20px);
   }
 }
 #pages #page-container #background {

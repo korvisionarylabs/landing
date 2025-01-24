@@ -71,16 +71,16 @@ div {
 
       max-width: $max-width;
 
-      @include respond-to('phone') {
-        width: calc(100% - 20px - 20px);
+      @include respond-to('desktop-small') {
+        width: calc(100% - 84px - 84px);
       }
 
       @include respond-to('tablet') {
         width: calc(100% - 32px - 32px);
       }
 
-      @include respond-to('desktop-small') {
-        width: calc(100% - 84px - 84px);
+      @include respond-to('phone') {
+        width: calc(100% - 20px - 20px);
       }
     }
 

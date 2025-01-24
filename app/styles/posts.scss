@@ -1,6 +1,6 @@
 @use 'abstracts' as *;
 
-#page.news {
+#page.posts {
   padding: 100px 0 100px 0;
 
   @include respond-to('desktop-small') {

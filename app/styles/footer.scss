@@ -1,0 +1,212 @@
+@use 'abstracts' as *;
+
+#footer {
+  flex: 1;
+  min-height: 100dvh;
+  scroll-snap-align: start end;
+  width: 100%;
+  align-items: center;
+
+  .inner {
+    max-width: $max-width;
+
+    @include respond-to('desktop-small') {
+      width: calc(100% - 84px - 84px);
+    }
+
+    @include respond-to('tablet') {
+      width: calc(100% - 32px - 32px);
+    }
+
+    @include respond-to('phone') {
+      width: calc(100% - 20px - 20px);
+    }
+
+    &.top {
+      flex: 1;
+      justify-content: flex-end;
+      padding: 72px 0;
+
+      .title {
+        @include respond-to-down('tablet') {
+          align-items: center;
+        }
+
+        gap: 16px;
+      }
+    }
+
+    &.bottom {
+      flex-direction: row;
+      padding: 72px 0;
+      gap: 80px;
+
+      @include respond-to-only('desktop-small') {
+        padding: 60px 0;
+      }
+
+      @include respond-to-down('tablet') {
+        padding: 52px 0;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100dvw;
+        right: 0;
+        bottom: 0;
+        width: 200dvw;
+        background-color: $gs-8;
+      }
+
+      @include respond-to-down('tablet') {
+        flex-direction: column;
+        gap: 48px;
+      }
+
+      .vl {
+        gap: 44px;
+
+        @include respond-to-down('tablet') {
+          align-items: center;
+          gap: 24px;
+        }
+
+        .logo {
+          width: 346px;
+          height: 68px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center center;
+
+          background-image: url("/assets/logo.svg");
+
+          @include respond-to-down('tablet') {
+            width: 296px;
+            height: 58px;
+          }
+        }
+
+        .info {
+          gap: 8px;
+
+          @include respond-to-down('tablet') {
+            align-items: center;
+          }
+
+          .contact {
+            @include respond-to-only('tablet') {
+              flex-direction: row;
+              gap: 32px;
+            }
+
+            @include respond-to-only('phone') {
+              flex-direction: column;
+              align-items: center;
+              gap: 8px;
+            }
+
+            .mix {
+              flex-direction: row;
+              gap: 12px;
+
+              a {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+
+      .items {
+        flex: 1;
+        flex-direction: row;
+
+        @include respond-to-only('phone') {
+          flex-direction: column;
+          gap: 12px;
+        }
+
+        .item {
+          flex: 1;
+          padding: 12px 0 0 32px;
+          border-left: 1px solid $gs-6;
+          gap: 20px;
+
+          @include respond-to-only('phone') {
+            align-items: center;
+            border: none;
+            padding: 16px;
+          }
+
+          .links {
+            gap: 8px;
+          }
+
+          .icons {
+            flex-direction: row;
+            gap: 8px;
+
+            .icon {
+              width: 48px;
+              height: 48px;
+              background-color: $gs-7;
+              border-radius: 96px;
+
+              background-repeat: no-repeat;
+              background-position: center center;
+
+              &.facebook {
+                background-image: url("/assets/facebook.svg");
+              }
+
+              &.instagram {
+                background-image: url("/assets/instagram.svg");
+              }
+            }
+          }
+
+          .download {
+            align-self: flex-start;
+            flex-direction: row;
+            padding: 10px 16px;
+            gap: 4px;
+            background-color: $gs-7;
+            border-radius: 96px;
+
+            @include respond-to-only('phone') {
+              align-self: center;
+            }
+
+            p {
+              color: $primary;
+            }
+          }
+        }
+      }
+
+      .cr {
+        color: $gs-5;
+
+        &.desktop {
+          @include respond-to-down('tablet') {
+            display: none;
+          }
+        }
+
+        &.down {
+          display: none;
+
+          @include respond-to-down('tablet') {
+            display: block;
+          }
+        }
+      }
+
+      .res {
+        align-items: center;
+      }
+    }
+  }
+}

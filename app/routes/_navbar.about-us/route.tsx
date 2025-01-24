@@ -150,6 +150,16 @@ const histories = [
         title: "AWC 아시아 국제 물 주간",
         description: "한국수자원공사 미디어 아트 콘텐츠 제작",
       },
+      {
+        year: "",
+        title: "헬로웍스",
+        description: "TIMT LIVE  라이브 송출",
+      },
+      {
+        year: "",
+        title: "톡시온",
+        description: "숏폼  CF 콘텐츠 제작",
+      },
     ],
   },
 ];

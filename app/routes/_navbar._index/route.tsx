@@ -1,3 +1,4 @@
+import { Footer } from "~/components/footer";
 import "~/styles/home.css";
 
 const xrProductions = [
@@ -201,10 +202,10 @@ export default function Home() {
       </div>
 
       <div id="page-container" className="full">
-        <div id="page" className="portfolio">
+        <div id="page" className="posts">
           <div className="title-container">
             <div className="title">
-              <h1 className="title-l gradient">Portfolio</h1>
+              <h1 className="title-l gradient">Posts</h1>
               <p className="body-s">VisionaryLabs가 지금까지 수행했던 프로젝트를 만나보세요.</p>
             </div>
             <div className="sub">
@@ -216,10 +217,10 @@ export default function Home() {
                   <p>전체</p>
                 </div>
                 <div className="select">
-                  <p>프로젝트 분류1</p>
+                  <p>News</p>
                 </div>
                 <div className="select">
-                  <p>프로젝트 분류2</p>
+                  <p>Portfolio</p>
                 </div>
               </div>
               <div className="control right">
@@ -337,6 +338,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }
