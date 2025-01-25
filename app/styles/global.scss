@@ -42,6 +42,7 @@ div {
 
   overflow-x: hidden;
   overflow-y: scroll;
+  overscroll-behavior-y: none;
 
   // scroll-snap-type: y mandatory;
 

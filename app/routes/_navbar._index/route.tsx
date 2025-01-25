@@ -1,4 +1,5 @@
 import { Footer } from "~/components/footer";
+import { Video } from "~/components/video";
 import "~/styles/home.css";
 
 const xrProductions = [
@@ -90,7 +91,17 @@ export default function Home() {
 
       <div id="page-container">
         <div id="page" className="vision">
-          <div className="container" />
+          <div className="container">
+            <Video
+              urls={[
+                "/assets/home/wyv/1.mp4",
+                "/assets/home/wyv/2.mp4",
+                "/assets/home/wyv/3.mp4",
+                "/assets/home/wyv/4.mp4",
+                "/assets/home/wyv/5.mp4",
+              ]}
+            />
+          </div>
           <div className="title-container">
             <div className="title">
               <h1 className="title-l">Watch Your</h1>

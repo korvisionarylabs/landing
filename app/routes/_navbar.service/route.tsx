@@ -1,5 +1,6 @@
 import { Footer } from "~/components/footer";
 import { Image } from "~/components/image";
+import { Video } from "~/components/video";
 import "~/styles/service.css";
 
 const programs = [
@@ -62,7 +63,18 @@ export default function Service() {
             </div>
             <div className="media">
               <div className="player">
-                <div className="viewer">{/* */}</div>
+                <div className="viewer">
+                  <Video
+                    abs
+                    urls={[
+                      "/assets/service/ma/1.mp4",
+                      "/assets/service/ma/2.mp4",
+                      "/assets/service/ma/3.mp4",
+                      "/assets/service/ma/4.mp4",
+                      "/assets/service/ma/5.mp4",
+                    ]}
+                  />
+                </div>
                 <div className="progress">{/* */}</div>
               </div>
             </div>
@@ -152,7 +164,19 @@ export default function Service() {
           <div className="section top igc">
             <div className="media">
               <div className="player">
-                <div className="viewer">{/* */}</div>
+                <div className="viewer">
+                  <Video
+                    abs
+                    urls={[
+                      "/assets/service/igc/1.mp4",
+                      "/assets/service/igc/2.mp4",
+                      "/assets/service/igc/3.mp4",
+                      "/assets/service/igc/4.mp4",
+                      "/assets/service/igc/5.mp4",
+                      "/assets/service/igc/6.mp4",
+                    ]}
+                  />
+                </div>
                 <div className="progress">{/* */}</div>
               </div>
             </div>
@@ -304,7 +328,9 @@ export default function Service() {
             </div>
             <div className="media">
               <div className="player">
-                <div className="viewer">{/* */}</div>
+                <div className="viewer">
+                  <Video abs urls={["/assets/service/vps/1.mp4"]} />
+                </div>
                 <div className="progress">{/* */}</div>
               </div>
             </div>
