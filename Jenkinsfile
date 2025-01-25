@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        REGISTRY_URL = 'host.docker.internal:5000'
+        REGISTRY_URL = 'ghcr.io'
         IMAGE_NAME = sh(script: 'echo $GIT_URL | sed -E "s/.*[:\\/]([^\\/]+\\/[^\\/]+)\\.git$/\\1/"', returnStdout: true).trim()
         IMAGE_TAG = sh(script: "git rev-parse --short HEAD", returnStdout: true).trim()
         IMAGE_URL = "${REGISTRY_URL}/${IMAGE_NAME}:${IMAGE_TAG}"
@@ -29,9 +29,9 @@ pipeline {
         stage('Push Image') {
             steps {
                 script {
-                    docker.withRegistry('http://host.docker.internal:5000') {
+                    docker.withRegistry('https://ghcr.io', 'ghcr') {
                         docker.image(env.IMAGE_URL).push()
-                        docker.image(env.IMAGE_URL).push("latest")u
+                        docker.image(env.IMAGE_URL).push("latest")
                     }
                 }
             }
