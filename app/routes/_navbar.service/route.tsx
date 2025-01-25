@@ -1,7 +1,22 @@
+import type { MetaFunction } from "@remix-run/react";
 import { Footer } from "~/components/footer";
 import { Image } from "~/components/image";
 import { Video } from "~/components/video";
 import "~/styles/service.css";
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "VisionaryLabs - Service" },
+    {
+      property: "og:title",
+      content: "VisionaryLabs - Service",
+    },
+    {
+      name: "description",
+      content: "아이디어가 현실이 되는 공간, 차세대 콘텐츠 제작의 중심에서, 우리는 미래를 만듭니다.",
+    },
+  ];
+};
 
 const programs = [
   "3D 그래픽, CG, VFX",

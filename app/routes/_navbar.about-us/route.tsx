@@ -1,5 +1,20 @@
+import type { MetaFunction } from "@remix-run/react";
 import { Footer } from "~/components/footer";
 import "~/styles/about-us.css";
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "VisionaryLabs - About Us" },
+    {
+      property: "og:title",
+      content: "VisionaryLabs - About Us",
+    },
+    {
+      name: "description",
+      content: "미래를 그리다, 혁신을 이루다. XR콘텐츠 프로덕션과 미디어 아트의 새로운 가능성을 제시합니다.",
+    },
+  ];
+};
 
 const histories = [
   {

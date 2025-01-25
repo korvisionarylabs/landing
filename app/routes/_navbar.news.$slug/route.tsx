@@ -1,8 +1,41 @@
 import "~/styles/news.css";
 
-import { NavLink, useParams } from "@remix-run/react";
+import type { LoaderFunctionArgs } from "@remix-run/node";
+import { type MetaFunction, NavLink, useParams } from "@remix-run/react";
 import { Image } from "~/components/image";
 import { newsList } from "~/data/post/news";
+
+export async function loader({ params }: LoaderFunctionArgs) {
+  const { slug } = params;
+  const post = newsList.find((item) => item.slug === slug);
+
+  return {
+    slug,
+    post,
+  };
+}
+
+export const meta: MetaFunction<typeof loader> = ({ data }) => {
+  if (!data || !data.post) {
+    return [
+      {
+        title: "404",
+      },
+    ];
+  }
+
+  return [
+    { title: data.post.title },
+    {
+      property: "og:title",
+      content: data.post.title,
+    },
+    {
+      name: "description",
+      content: "VisionaryLabs - Post",
+    },
+  ];
+};
 
 export default function Post() {
   const params = useParams();

@@ -1,6 +1,21 @@
+import type { MetaFunction } from "@remix-run/react";
 import { Footer } from "~/components/footer";
 import { Video } from "~/components/video";
 import "~/styles/home.css";
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "VisionaryLabs" },
+    {
+      property: "og:title",
+      content: "VisionaryLabs",
+    },
+    {
+      name: "description",
+      content: "아이디어가 현실이 되는 공간, 차세대 콘텐츠 제작의 중심에서, 우리는 미래를 만듭니다.",
+    },
+  ];
+};
 
 const xrProductions = [
   {
