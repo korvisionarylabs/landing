@@ -84,15 +84,15 @@
   line-height: 30px;
 }
 
-.body-s, #page.posts .title-container .sub .selector .select p, #page.contact .container .left .form .mix .name, #page.contact .container .left .form .mix input,
-#page.contact .container .left .form .mix textarea, .body-s-b, #page.posts .title-container .sub .selector .select.selected p {
+.body-s, #page.post .title-container .sub .selector .select p, #page.contact .container .left .form .mix .name, #page.contact .container .left .form .mix input,
+#page.contact .container .left .form .mix textarea, .body-s-b, #page.post .title-container .sub .selector .select.selected p {
   color: #BCC1D6;
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
 }
 
-.body-s-b, #page.posts .title-container .sub .selector .select.selected p {
+.body-s-b, #page.post .title-container .sub .selector .select.selected p {
   font-weight: 600;
 }
 
@@ -563,43 +563,43 @@
   gap: 20px;
 }
 
-#page.posts {
+#page.post {
   padding: 100px 0 100px 0;
   gap: 40px;
 }
 @media (min-width: 1200px) {
-  #page.posts {
+  #page.post {
     padding: 108px 0 60px 0;
     gap: 60px;
   }
 }
 @media (min-width: 1600px) {
-  #page.posts {
+  #page.post {
     padding: 128px 0 72px 0;
   }
 }
-#page.posts .title-container {
+#page.post .title-container {
   align-self: stretch;
   gap: 32px;
 }
-#page.posts .title-container .title {
+#page.post .title-container .title {
   align-items: center;
   text-align: center;
   white-space: wrap;
   gap: 16px;
 }
-#page.posts .title-container .sub {
+#page.post .title-container .sub {
   flex-direction: row;
   align-self: stretch;
   align-items: center;
   justify-content: center;
 }
 @media (min-width: 810px) {
-  #page.posts .title-container .sub {
+  #page.post .title-container .sub {
     justify-content: space-between;
   }
 }
-#page.posts .title-container .sub .control {
+#page.post .title-container .sub .control {
   flex-direction: row;
   align-items: center;
   gap: 4px;
@@ -610,47 +610,47 @@
   display: none;
 }
 @media (min-width: 810px) {
-  #page.posts .title-container .sub .control {
+  #page.post .title-container .sub .control {
     display: flex;
   }
 }
-#page.posts .title-container .sub .control p {
+#page.post .title-container .sub .control p {
   color: #C670FF;
 }
-#page.posts .title-container .sub .control.left::before {
+#page.post .title-container .sub .control.left::before {
   content: "";
   width: 12px;
   height: 12px;
   margin: 3px;
   background-image: url("/assets/left.svg");
 }
-#page.posts .title-container .sub .control.right::after {
+#page.post .title-container .sub .control.right::after {
   content: "";
   width: 12px;
   height: 12px;
   margin: 3px;
   background-image: url("/assets/right.svg");
 }
-#page.posts .title-container .sub .selector {
+#page.post .title-container .sub .selector {
   flex-direction: row;
   gap: 4px;
   padding: 8px;
   border-radius: 96px;
   border: 1px solid #3C3E4C;
 }
-#page.posts .title-container .sub .selector .select {
+#page.post .title-container .sub .selector .select {
   background-color: #25262E;
   padding: 12px 16px;
   border-radius: 96px;
   cursor: pointer;
 }
-#page.posts .title-container .sub .selector .select.selected {
+#page.post .title-container .sub .selector .select.selected {
   background-color: white;
 }
-#page.posts .title-container .sub .selector .select.selected p {
+#page.post .title-container .sub .selector .select.selected p {
   color: #25262E;
 }
-#page.posts .content {
+#page.post .content {
   flex: 1;
 }
 

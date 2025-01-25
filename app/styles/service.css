@@ -982,4 +982,14 @@
   background-image: url("/assets/service/ec/5.svg");
 }
 
+.thumbnail {
+  flex-direction: row;
+  gap: 16px;
+}
+.thumbnail * {
+  flex: 1;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
 /*# sourceMappingURL=service.css.map */

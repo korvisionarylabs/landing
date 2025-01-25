@@ -1,13 +1,15 @@
 import "~/styles/footer.css";
 
-const Footer = () => {
+const Footer = ({ text = true }: { text?: boolean }) => {
   return (
     <div id="footer">
       <div className="inner top">
-        <div className="title">
-          <h1 className="title-l">아이디어가</h1>
-          <h1 className="title-l gradient">현실이 되는 공간</h1>
-        </div>
+        {text && (
+          <div className="title">
+            <h1 className="title-l">아이디어가</h1>
+            <h1 className="title-l gradient">현실이 되는 공간</h1>
+          </div>
+        )}
       </div>
       <div className="inner bottom">
         <div className="vl">
@@ -35,10 +37,10 @@ const Footer = () => {
           <div className="item">
             <h5 className="title-s">이용안내</h5>
             <div className="links">
-              <a href="#" className="body-s">
+              <a href="#/" className="body-s">
                 서비스 이용약관
               </a>
-              <a href="#" className="body-s">
+              <a href="#/" className="body-s">
                 개인정보처리방침
               </a>
             </div>
@@ -46,8 +48,12 @@ const Footer = () => {
           <div className="item">
             <h5 className="title-s">SNS</h5>
             <div className="icons">
-              <a href="#" className="icon facebook"></a>
-              <a href="#" className="icon instagram"></a>
+              <a href="https://facebook.com" target="_blank" className="icon facebook" rel="noreferrer">
+                {/* Facebook */}
+              </a>
+              <a href="https://instagram.com" target="_blank" className="icon instagram" rel="noreferrer">
+                {/* Instagram */}
+              </a>
             </div>
           </div>
           <div className="item">

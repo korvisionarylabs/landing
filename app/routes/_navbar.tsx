@@ -16,8 +16,8 @@ const pages = [
     to: "/service",
   },
   {
-    name: "Posts",
-    to: "/posts",
+    name: "Post",
+    to: "/post",
   },
 ];
 

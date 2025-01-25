@@ -1,0 +1,240 @@
+.absolute-fill {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.title-l {
+  color: #FFFFFF;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+@media (min-width: 0px) {
+  .title-l {
+    font-size: 52px;
+    line-height: 60px;
+  }
+}
+@media (min-width: 810px) {
+  .title-l {
+    font-size: 64px;
+    line-height: 64px;
+  }
+}
+@media (min-width: 1200px) {
+  .title-l {
+    font-size: 80px;
+    line-height: 80px;
+  }
+}
+@media (min-width: 1600px) {
+  .title-l {
+    font-size: 112px;
+    line-height: 112px;
+  }
+}
+
+.title-lm {
+  color: #FFFFFF;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+@media (min-width: 0px) {
+  .title-lm {
+    font-size: 32px;
+    line-height: 44px;
+  }
+}
+@media (min-width: 810px) {
+  .title-lm {
+    font-size: 60px;
+    line-height: 76px;
+  }
+}
+@media (min-width: 1200px) {
+  .title-lm {
+    font-size: 92px;
+    line-height: 108px;
+  }
+}
+
+.title-m {
+  color: #FFFFFF;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  font-size: 40px;
+  line-height: 44px;
+}
+
+.title-ms {
+  color: #FFFFFF;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.title-s {
+  color: #FFFFFF;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.body-s, #page.post .header .category .item p, .body-s-b, #page.post .header .category .item.selected p {
+  color: #BCC1D6;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.body-s-b, #page.post .header .category .item.selected p {
+  font-weight: 600;
+}
+
+.body-m, .body-m-b, .body-m-m {
+  color: #FFFFFF;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+@media (min-width: 0px) {
+  .body-m, .body-m-b, .body-m-m {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+@media (min-width: 810px) {
+  .body-m, .body-m-b, .body-m-m {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.body-m-m {
+  font-weight: 500;
+}
+
+.body-m-b {
+  font-weight: 600;
+}
+
+.header-logo {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  font-size: 18px;
+  line-height: 2em;
+}
+
+.link {
+  color: #8B90AD;
+}
+.link:hover {
+  color: #BCC1D6;
+  text-decoration: underline;
+}
+
+.link-2 {
+  color: #BCC1D6;
+}
+.link-2:hover {
+  color: #BCC1D6;
+  text-decoration: underline;
+}
+
+.gradient {
+  background: linear-gradient(90deg, #FFFFFF 0%, #C670FF 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#page.post {
+  padding: 128px 0 64px 0;
+  gap: 32px;
+}
+@media (min-width: 1200px) and (max-width: 1599px) {
+  #page.post {
+    padding: 108px 0 60px 0;
+  }
+}
+@media (max-width: 1199px) {
+  #page.post {
+    padding: 100px 0;
+  }
+}
+#page.post .header {
+  flex-direction: row;
+  align-self: stretch;
+  justify-content: space-between;
+  align-items: center;
+}
+#page.post .header .category {
+  flex-direction: row;
+  padding: 8px;
+  gap: 4px;
+  border-radius: 96px;
+  background-color: #191A1F;
+  border: 1px solid #3C3E4C;
+}
+#page.post .header .category .item {
+  padding: 12px 16px;
+  background-color: #25262E;
+  border-radius: 96px;
+  cursor: pointer;
+}
+#page.post .header .category .item.selected {
+  background-color: #FFFFFF;
+}
+#page.post .header .category .item.selected p {
+  color: #25262E;
+}
+#page.post .list {
+  align-self: stretch;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+@media (min-width: 810px) and (max-width: 1199px) {
+  #page.post .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 0px) and (max-width: 809px) {
+  #page.post .list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+#page.post .list .item {
+  background-color: #191A1F;
+  border: 1px solid #25262E;
+  border-radius: 12px;
+  gap: 16px;
+  overflow: hidden;
+}
+#page.post .list .item .thumbnail {
+  padding-top: 56.25%;
+  background-color: #25262E;
+  overflow: hidden;
+}
+#page.post .list .item .thumbnail * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+}
+#page.post .list .item .info {
+  padding: 0px 20px 20px;
+  gap: 4px;
+  white-space: wrap;
+}
+#page.post .list .item .info .body-s, #page.post .list .header .category .item .info p, #page.post .header .category .list .item .info p {
+  color: #8B90AD;
+}
+
+/*# sourceMappingURL=post.css.map */

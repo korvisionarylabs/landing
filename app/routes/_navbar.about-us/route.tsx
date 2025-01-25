@@ -1,3 +1,4 @@
+import { Footer } from "~/components/footer";
 import "~/styles/about-us.css";
 
 const histories = [
@@ -603,6 +604,8 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }

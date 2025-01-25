@@ -1,3 +1,5 @@
+import { Footer } from "~/components/footer";
+import { Image } from "~/components/image";
 import "~/styles/service.css";
 
 const programs = [
@@ -179,7 +181,11 @@ export default function Service() {
           </div>
           <div className="section middle igc">
             <div className="item first">
-              <div className="thumbnail" />
+              <div className="thumbnail">
+                <Image url="/assets/service/igc/1-1.png" />
+                <Image url="/assets/service/igc/1-2.png" />
+                <Image url="/assets/service/igc/1-3.gif" />
+              </div>
               <div className="content">
                 <div className="title">
                   <h3 className="title-ms">기획부터 제작, 개발까지 한 번에</h3>
@@ -193,7 +199,10 @@ export default function Service() {
               </div>
             </div>
             <div className="item second">
-              <div className="thumbnail" />
+              <div className="thumbnail">
+                <Image url="/assets/service/igc/2-1.gif" />
+                <Image url="/assets/service/igc/2-2.png" />
+              </div>
               <div className="content">
                 <div className="title">
                   <h3 className="title-ms">
@@ -302,7 +311,10 @@ export default function Service() {
           </div>
           <div className="section middle igc">
             <div className="item first">
-              <div className="thumbnail" />
+              <div className="thumbnail">
+                <Image url="/assets/service/vps/1-1.png" />
+                <Image url="/assets/service/vps/1-2.png" />
+              </div>
               <div className="content">
                 <div className="title">
                   <h3 className="title-ms">최첨단 모션캡처와 실시간 콘텐츠 제작</h3>
@@ -319,7 +331,10 @@ export default function Service() {
               </div>
             </div>
             <div className="item second">
-              <div className="thumbnail" />
+              <div className="thumbnail">
+                <Image url="/assets/service/vps/2-1.png" />
+                <Image url="/assets/service/vps/2-2.png" />
+              </div>
               <div className="content">
                 <div className="title">
                   <h3 className="title-ms">Unreal과 Aximmetry를 활용한 실시간 콘텐츠 제작 및 송출</h3>
@@ -467,7 +482,11 @@ export default function Service() {
           </div>
           <div className="section middle igc">
             <div className="item first">
-              <div className="thumbnail" />
+              <div className="thumbnail">
+                <Image url="/assets/service/vdorm/1-1.png" />
+                <Image url="/assets/service/vdorm/1-2.png" />
+                <Image url="/assets/service/vdorm/1-3.png" />
+              </div>
               <div className="content">
                 <div className="title">
                   <h3 className="title-ms">자체 버추얼 방송 플랫폼 개발</h3>
@@ -483,7 +502,10 @@ export default function Service() {
               </div>
             </div>
             <div className="item second">
-              <div className="thumbnail" />
+              <div className="thumbnail">
+                <Image url="/assets/service/vdorm/2-1.png" />
+                <Image url="/assets/service/vdorm/2-2.png" />
+              </div>
               <div className="content">
                 <div className="title">
                   <h3 className="title-ms">싱글캠 기반 모션 캡쳐 AI 기능 지원</h3>
@@ -685,6 +707,8 @@ export default function Service() {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }

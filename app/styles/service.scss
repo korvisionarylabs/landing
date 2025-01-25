@@ -967,3 +967,14 @@
     }
   }
 }
+
+.thumbnail {
+  flex-direction: row;
+  gap: 16px;
+
+  * {
+    flex: 1;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+}

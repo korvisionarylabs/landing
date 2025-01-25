@@ -201,11 +201,11 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="page-container" className="full">
-        <div id="page" className="posts">
+      {/* <div id="page-container" className="full">
+        <div id="page" className="post">
           <div className="title-container">
             <div className="title">
-              <h1 className="title-l gradient">Posts</h1>
+              <h1 className="title-l gradient">Post</h1>
               <p className="body-s">VisionaryLabs가 지금까지 수행했던 프로젝트를 만나보세요.</p>
             </div>
             <div className="sub">
@@ -228,9 +228,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="content">{/* */}</div>
+          <div className="content" />
         </div>
-      </div>
+      </div> */}
 
       <div id="page-container" className="full">
         <div id="page" className="partners">
