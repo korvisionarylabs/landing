@@ -12,7 +12,7 @@ export default function Post() {
 
   return (
     <div id="pages">
-      <div id="page-container" className="">
+      <div id="page-container" className="no-min">
         <div id="page" className="post">
           <div className="header">
             <h3 className="title-m">Post</h3>

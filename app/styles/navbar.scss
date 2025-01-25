@@ -80,6 +80,7 @@
 
         &.selected {
           margin-bottom: -4px;
+          pointer-events: none;
 
           .selected {
             opacity: 1;

@@ -64,7 +64,7 @@ const xrProductions = [
 export default function Home() {
   return (
     <div id="pages">
-      <div id="page-container" className="full">
+      <div id="page-container">
         <div id="background">
           <div className="filter" />
           <video autoPlay loop muted playsInline>
@@ -87,7 +87,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="page-container" className="full">
+
+      <div id="page-container">
         <div id="page" className="vision">
           <div className="container" />
           <div className="title-container">
@@ -106,7 +107,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="page-container" className="full">
+      <div id="page-container">
         <div id="background">
           <div className="filter" />
           <img src="/assets/home/xr.png" alt="" />
@@ -181,7 +182,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="page-container" className="full">
+      <div id="page-container">
         <div id="background">
           <div className="filter" />
           <img src="/assets/home/vdorm.png" alt="" />
@@ -201,7 +202,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <div id="page-container" className="full">
+      {/* <div id="page-container">
         <div id="page" className="post">
           <div className="title-container">
             <div className="title">
@@ -232,7 +233,7 @@ export default function Home() {
         </div>
       </div> */}
 
-      <div id="page-container" className="full">
+      <div id="page-container">
         <div id="page" className="partners">
           <div className="title">
             <h1 className="title-l gradient">Partners</h1>
@@ -247,7 +248,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="page-container" className="full-min">
+      <div id="page-container">
         <div id="page" className="contact">
           <div className="container">
             <div className="left">

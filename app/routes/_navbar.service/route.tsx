@@ -18,7 +18,7 @@ const programs = [
 export default function Service() {
   return (
     <div id="pages">
-      <div id="page-container" className="full">
+      <div id="page-container">
         <div id="background">
           <div className="filter" />
           <img src="/assets/service/section.png" alt="" />
@@ -42,7 +42,7 @@ export default function Service() {
         </div>
       </div>
 
-      <div id="page-container" className="full-min">
+      <div id="page-container">
         <div id="page" className="mp">
           <div className="section top ma">
             <div className="info ma">
@@ -147,7 +147,7 @@ export default function Service() {
         </div>
       </div>
 
-      <div id="page-container" className="full-min">
+      <div id="page-container">
         <div id="page" className="mp">
           <div className="section top igc">
             <div className="media">
@@ -254,7 +254,7 @@ export default function Service() {
         </div>
       </div>
 
-      <div id="page-container" className="full">
+      <div id="page-container">
         <div id="background">
           <div className="filter" />
           <img src="/assets/service/section.png" alt="" />
@@ -278,7 +278,7 @@ export default function Service() {
         </div>
       </div>
 
-      <div id="page-container" className="full-min">
+      <div id="page-container">
         <div id="page" className="mp vps">
           <div className="section top igc">
             <div className="info igc">
@@ -551,7 +551,7 @@ export default function Service() {
         </div>
       </div>
 
-      <div id="page-container" className="full">
+      <div id="page-container">
         <div id="background">
           <div className="filter" />
           <img src="/assets/service/section.png" alt="" />
@@ -577,7 +577,7 @@ export default function Service() {
         </div>
       </div>
 
-      <div id="page-container" className="full-min">
+      <div id="page-container">
         <div id="page" className="vt">
           <div className="step">
             <div className="item">

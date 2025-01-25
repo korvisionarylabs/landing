@@ -193,7 +193,7 @@ const activities = [
 export default function AboutUs() {
   return (
     <div id="pages">
-      <div id="page-container" className="full">
+      <div id="page-container">
         <div id="background">
           <div className="filter" />
           <video autoPlay loop muted playsInline>
@@ -217,6 +217,7 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
+
       <div id="page-container">
         <div id="page" className="ourhistory">
           <div className="container">
@@ -250,7 +251,8 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-      <div id="page-container" className="full-min">
+
+      <div id="page-container">
         <div id="page" className="ourteam">
           <div className="container">
             <div className="left">
@@ -418,7 +420,8 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-      <div id="page-container" className="full-min">
+
+      <div id="page-container">
         <div id="page" className="activity">
           <div className="container">
             {activities.map((activity) => (
@@ -442,7 +445,8 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-      <div id="page-container" className="full-min">
+
+      <div id="page-container">
         <div id="page" className="ourtechnology">
           <h1 className="title-l gradient">Our Technology</h1>
           <div className="container">
@@ -500,7 +504,8 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-      <div id="page-container" className="full-min">
+
+      <div id="page-container">
         <div id="page" className="technology">
           <div className="container">
             <div className="box first">
@@ -569,7 +574,8 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-      <div id="page-container" className="full-min">
+
+      <div id="page-container">
         <div id="page" className="whatweuse">
           <div className="container">
             <div className="title">
