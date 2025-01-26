@@ -168,6 +168,27 @@
       }
     }
   }
+
+  #album {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    @include respond-to-only('phone') {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .image {
+      padding-top: 9 / 16 * 100%;
+      background-color: $gs-7;
+      overflow: hidden;
+
+      background-position: center center;
+      background-size: cover;
+
+      border-radius: 12px;
+    }
+  }
 }
 
 #portfolio {
@@ -194,42 +215,46 @@
       width: calc(100% - 20px - 20px);
     }
 
-    padding: 32px 0;
-    gap: 32px;
+    gap: 160px;
 
     white-space: wrap;
 
-    .header {
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
+    .head {
+      padding-top: 32px;
+      gap: 32px;
 
-      @include respond-to-only('phone') {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+      .header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
 
-      .title {
-        gap: 12px;
-        padding-bottom: 12px;
+        @include respond-to-only('phone') {
+          flex-direction: column;
+          align-items: flex-start;
+        }
 
-        .tags {
-          flex-direction: row;
-          gap: 8px;
+        .title {
+          gap: 12px;
+          padding-bottom: 12px;
 
-          @include respond-to-only('phone') {
-            flex-direction: column;
-            align-items: flex-start;
-          }
+          .tags {
+            flex-direction: row;
+            gap: 8px;
 
-          .tag {
-            padding: 8px 12px;
-            background-color: $gs-8;
-            border: 1px solid $gs-7;
-            border-radius: 96px;
+            @include respond-to-only('phone') {
+              flex-direction: column;
+              align-items: flex-start;
+            }
 
-            p {
-              color: $primary;
+            .tag {
+              padding: 8px 12px;
+              background-color: $gs-8;
+              border: 1px solid $gs-7;
+              border-radius: 96px;
+
+              p {
+                color: $primary;
+              }
             }
           }
         }
@@ -240,6 +265,7 @@
 
         .item {
           flex-direction: row;
+          white-space: pre-wrap;
           gap: 20px;
 
           .body-m {
@@ -247,64 +273,76 @@
           }
         }
       }
+
+      .thumbnail {
+        padding-top: 9 / 16 * 100%;
+        border-radius: 12px;
+        background-color: $gs-7;
+        overflow: hidden;
+
+        * {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          object-fit: cover;
+        }
+      }
     }
 
-    .thumbnail {
+    .foot {
+      gap: 32px;
+
+      .divider {
+        height: 1px;
+        background-color: $gs-7;
+        margin: 32px 0;
+      }
+
+      .buttons {
+        flex-direction: row;
+        justify-content: center;
+        gap: 12px;
+
+        .button {
+          gap: 4px;
+          padding: 10px 16px;
+          background-color: $gs-7;
+          border-radius: 96px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  #album {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+
+    @include respond-to-only('desktop-small') {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include respond-to-only('tablet') {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond-to-only('phone') {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .image {
       padding-top: 9 / 16 * 100%;
-      border-radius: 12px;
       background-color: $gs-7;
       overflow: hidden;
 
-      * {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        object-fit: cover;
-      }
+      background-position: center center;
+      background-size: cover;
+
+      border-radius: 12px;
     }
-
-    .divider {
-      height: 1px;
-      background-color: $gs-7;
-      margin: 32px 0;
-    }
-
-    .buttons {
-      flex-direction: row;
-      justify-content: center;
-      gap: 12px;
-
-      .button {
-        gap: 4px;
-        padding: 10px 16px;
-        background-color: $gs-7;
-        border-radius: 96px;
-        cursor: pointer;
-      }
-    }
-  }
-}
-
-#album {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-
-  @include respond-to-only('phone') {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .image {
-    padding-top: 9 / 16 * 100%;
-    background-color: $gs-7;
-    overflow: hidden;
-
-    background-position: center center;
-    background-size: cover;
-
-    border-radius: 12px;
   }
 }
 
@@ -326,4 +364,31 @@
 
     border-radius: 12px;
   }
+}
+
+#image {
+  @include respond-to-only('tablet') {
+    min-height: 320px;
+  }
+
+  @include respond-to-only('phone') {
+    min-height: 200px;
+  }
+}
+
+#row {
+  flex-direction: row;
+  gap: 48px;
+
+  @include respond-to-down('tablet') {
+    flex-direction: column;
+  }
+
+  >* {
+    flex: 1;
+  }
+}
+
+#box {
+  gap: 20px;
 }

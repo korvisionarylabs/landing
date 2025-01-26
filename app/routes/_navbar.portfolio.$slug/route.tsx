@@ -56,45 +56,50 @@ export default function Portfolio() {
   return (
     <div id="portfolio">
       <div id="view">
-        <div className="header">
-          <div className="title">
-            <div className="tags">
-              {post.tags.map((tag) => (
-                <div key={tag} className="tag">
-                  <p className="body-s-b">{tag}</p>
+        <div className="head">
+          <div className="header">
+            <div className="title">
+              <div className="tags">
+                {post.tags.map((tag) => (
+                  <div key={tag} className="tag">
+                    <p className="body-s-b">{tag}</p>
+                  </div>
+                ))}
+              </div>
+              <h3 className="title-m">{post.title}</h3>
+            </div>
+            <div className="extra">
+              {post.extra.map((item) => (
+                <div className="item" key={item.key}>
+                  <p className="body-m-b">{item.key}</p>
+                  <p className="body-m">{item.value}</p>
                 </div>
               ))}
             </div>
-            <h3 className="title-m">{post.title}</h3>
           </div>
-          <div className="extra">
-            {post.extra.map((item) => (
-              <div className="item" key={item.key}>
-                <p className="body-m-b">{item.key}</p>
-                <p className="body-m">{item.value}</p>
+          <div className="thumbnail">
+            <Image url={`https://assets.visionarylabstech.com/post/portfolio/${slug}/thumbnail.jpg`} />
+          </div>
+        </div>
+        {post.post()}
+        <div className="foot">
+          <div className="divider" />
+          <div className="buttons">
+            <NavLink to="/post/portfolio">
+              <div className="button">
+                <p className="body-s-b">리스트로 돌아가기</p>
               </div>
-            ))}
-          </div>
-        </div>
-        <div className="thumbnail">
-          <Image url={`https://assets.visionarylabstech.com/post/portfolio/${slug}/thumbnail.jpg`} />
-        </div>
-        <div className="divider" />
-        <div className="buttons">
-          <NavLink to="/post/portfolio">
-            <div className="button">
-              <p className="body-s-b">리스트로 돌아가기</p>
+            </NavLink>
+            <div
+              className="button"
+              onClick={() => {
+                window.navigator.share({
+                  title: post.title,
+                  url: window.location.href,
+                });
+              }}>
+              <p className="body-s-b">공유</p>
             </div>
-          </NavLink>
-          <div
-            className="button"
-            onClick={() => {
-              window.navigator.share({
-                title: post.title,
-                url: window.location.href,
-              });
-            }}>
-            <p className="body-s-b">공유</p>
           </div>
         </div>
       </div>

@@ -1,3 +1,11 @@
+import { AWC } from "./awc";
+import { DAEGUART } from "./daeguart";
+import { LOCUS } from "./locus";
+import { MOBIDIC } from "./mobidic";
+import { SUCHANG } from "./suchang";
+import { TIMT } from "./timt";
+import { YOUTUBE } from "./youtube";
+
 export const portfolioList: {
   slug: string;
   title: string;
@@ -7,6 +15,7 @@ export const portfolioList: {
     value: string;
   }[];
   date: string;
+  post: () => JSX.Element;
 }[] = [
   {
     slug: "timt",
@@ -27,6 +36,7 @@ export const portfolioList: {
       },
     ],
     date: "202X. 0X",
+    post: TIMT,
   },
   {
     slug: "awc",
@@ -34,7 +44,7 @@ export const portfolioList: {
     tags: ["Promotion & Marketing"],
     extra: [
       {
-        key: "3D 홀로그램 콘텐츠 및 디바이스 설계 역량 기반한국수자원공사 AWC 홍보관용 영상제작",
+        key: "3D 홀로그램 콘텐츠 및 디바이스 설계 역량 기반\n한국수자원공사 AWC 홍보관용 영상제작",
         value: "",
       },
       {
@@ -43,6 +53,7 @@ export const portfolioList: {
       },
     ],
     date: "2024. 0X",
+    post: AWC,
   },
   {
     slug: "mobidic",
@@ -50,7 +61,7 @@ export const portfolioList: {
     tags: ["Entertainment"],
     extra: [
       {
-        key: "XR 스튜디오 운용 역량 기반완판치 인마이소중템 콘텐츠 제작",
+        key: "XR 스튜디오 운용 역량 기반\n완판치 인마이소중템 콘텐츠 제작",
         value: "",
       },
       {
@@ -59,6 +70,7 @@ export const portfolioList: {
       },
     ],
     date: "2024. 0X",
+    post: MOBIDIC,
   },
   {
     slug: "locus",
@@ -75,6 +87,7 @@ export const portfolioList: {
       },
     ],
     date: "2024. 0X",
+    post: LOCUS,
   },
   {
     slug: "suchang",
@@ -87,6 +100,7 @@ export const portfolioList: {
       },
     ],
     date: "2024. 0X",
+    post: SUCHANG,
   },
   {
     slug: "daeguart",
@@ -99,6 +113,7 @@ export const portfolioList: {
       },
     ],
     date: "2024. 0X",
+    post: DAEGUART,
   },
   {
     slug: "youtube",
@@ -111,5 +126,6 @@ export const portfolioList: {
       },
     ],
     date: "2024. 0X",
+    post: YOUTUBE,
   },
 ];

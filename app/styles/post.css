@@ -302,6 +302,24 @@
   border-radius: 96px;
   cursor: pointer;
 }
+#news #album {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (min-width: 0px) and (max-width: 809px) {
+  #news #album {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+#news #album .image {
+  padding-top: 56.25%;
+  background-color: #25262E;
+  overflow: hidden;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 12px;
+}
 
 #portfolio {
   display: block;
@@ -314,8 +332,7 @@
   margin: 128px auto 64px;
   width: 100%;
   max-width: 1420px;
-  padding: 32px 0;
-  gap: 32px;
+  gap: 160px;
   white-space: wrap;
 }
 @media (min-width: 1200px) and (max-width: 1599px) {
@@ -333,57 +350,62 @@
     width: calc(100% - 20px - 20px);
   }
 }
-#portfolio #view .header {
+#portfolio #view .head {
+  padding-top: 32px;
+  gap: 32px;
+}
+#portfolio #view .head .header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 @media (min-width: 0px) and (max-width: 809px) {
-  #portfolio #view .header {
+  #portfolio #view .head .header {
     flex-direction: column;
     align-items: flex-start;
   }
 }
-#portfolio #view .header .title {
+#portfolio #view .head .header .title {
   gap: 12px;
   padding-bottom: 12px;
 }
-#portfolio #view .header .title .tags {
+#portfolio #view .head .header .title .tags {
   flex-direction: row;
   gap: 8px;
 }
 @media (min-width: 0px) and (max-width: 809px) {
-  #portfolio #view .header .title .tags {
+  #portfolio #view .head .header .title .tags {
     flex-direction: column;
     align-items: flex-start;
   }
 }
-#portfolio #view .header .title .tags .tag {
+#portfolio #view .head .header .title .tags .tag {
   padding: 8px 12px;
   background-color: #191A1F;
   border: 1px solid #25262E;
   border-radius: 96px;
 }
-#portfolio #view .header .title .tags .tag p {
+#portfolio #view .head .header .title .tags .tag p {
   color: #C670FF;
 }
-#portfolio #view .header .extra {
+#portfolio #view .head .extra {
   gap: 8px;
 }
-#portfolio #view .header .extra .item {
+#portfolio #view .head .extra .item {
   flex-direction: row;
+  white-space: pre-wrap;
   gap: 20px;
 }
-#portfolio #view .header .extra .item .body-m {
+#portfolio #view .head .extra .item .body-m {
   color: #BCC1D6;
 }
-#portfolio #view .thumbnail {
+#portfolio #view .head .thumbnail {
   padding-top: 56.25%;
   border-radius: 12px;
   background-color: #25262E;
   overflow: hidden;
 }
-#portfolio #view .thumbnail * {
+#portfolio #view .head .thumbnail * {
   position: absolute;
   top: 0;
   left: 0;
@@ -391,35 +413,47 @@
   bottom: 0;
   object-fit: cover;
 }
-#portfolio #view .divider {
+#portfolio #view .foot {
+  gap: 32px;
+}
+#portfolio #view .foot .divider {
   height: 1px;
   background-color: #25262E;
   margin: 32px 0;
 }
-#portfolio #view .buttons {
+#portfolio #view .foot .buttons {
   flex-direction: row;
   justify-content: center;
   gap: 12px;
 }
-#portfolio #view .buttons .button {
+#portfolio #view .foot .buttons .button {
   gap: 4px;
   padding: 10px 16px;
   background-color: #25262E;
   border-radius: 96px;
   cursor: pointer;
 }
-
-#album {
+#portfolio #album {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+@media (min-width: 1200px) and (max-width: 1599px) {
+  #portfolio #album {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 810px) and (max-width: 1199px) {
+  #portfolio #album {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (min-width: 0px) and (max-width: 809px) {
-  #album {
+  #portfolio #album {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-#album .image {
+#portfolio #album .image {
   padding-top: 56.25%;
   background-color: #25262E;
   overflow: hidden;
@@ -444,6 +478,34 @@
   background-position: center center;
   background-size: cover;
   border-radius: 12px;
+}
+
+@media (min-width: 810px) and (max-width: 1199px) {
+  #image {
+    min-height: 320px;
+  }
+}
+@media (min-width: 0px) and (max-width: 809px) {
+  #image {
+    min-height: 200px;
+  }
+}
+
+#row {
+  flex-direction: row;
+  gap: 48px;
+}
+@media (max-width: 1199px) {
+  #row {
+    flex-direction: column;
+  }
+}
+#row > * {
+  flex: 1;
+}
+
+#box {
+  gap: 20px;
 }
 
 /*# sourceMappingURL=post.css.map */

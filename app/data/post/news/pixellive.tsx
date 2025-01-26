@@ -1,4 +1,4 @@
-import { Content, Title } from "~/components/post";
+import { Content, Title } from "~/components/news";
 
 const PIXELLIVE = () => {
   return (

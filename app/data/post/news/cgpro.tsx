@@ -1,4 +1,4 @@
-import { Album, Content, Images, Title } from "~/components/post";
+import { Album, Content, Images, Title } from "~/components/news";
 
 const CGPRO = () => {
   return (
