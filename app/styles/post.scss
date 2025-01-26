@@ -366,7 +366,8 @@
   }
 }
 
-#image {
+#image,
+#video {
   @include respond-to-only('tablet') {
     min-height: 320px;
   }
@@ -389,6 +390,83 @@
   }
 }
 
-#box {
+#column {
+  gap: 48px;
+}
+
+#mix {
   gap: 20px;
+}
+
+#list {
+  gap: 8px;
+
+  &.two {
+    gap: 16px;
+
+    .item {
+      gap: 12px;
+    }
+
+    .content {
+      flex-direction: column !important;
+    }
+  }
+
+  .item {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+
+    &::before {
+      content: '';
+      width: 16px;
+      height: 16px;
+      background-image: url("https://assets.visionarylabstech.com/icons/list.svg")
+    }
+
+    .content {
+      flex: 1;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .key {
+        color: $gs-1;
+      }
+    }
+  }
+}
+
+#box {
+  background-color: $gs-8;
+  border: 1px solid $gs-7;
+  border-radius: 12px;
+
+  &.highlight {
+    border-color: $primary;
+  }
+}
+
+#list-highlight {
+  white-space: nowrap;
+  gap: 20px;
+
+  .item {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+
+    &::before {
+      content: '';
+      width: 16px;
+      height: 16px;
+      background-image: url("https://assets.visionarylabstech.com/icons/list.svg")
+    }
+
+    p {
+      span {
+        color: $primary;
+      }
+    }
+  }
 }

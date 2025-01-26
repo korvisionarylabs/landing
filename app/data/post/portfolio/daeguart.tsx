@@ -1,10 +1,10 @@
-import { Album, Box, Content, Image, Row, Title } from "~/components/portfolio";
+import { Album, Content, Image, Mix, Row, Title } from "~/components/portfolio";
 
 const DAEGUART = () => {
   return (
     <>
       <Row>
-        <Box>
+        <Mix>
           <Title title="청년 예술가들을 대상으로 가상 콘텐츠 응용 교육을 진행했습니다." />
           <Content
             content={[
@@ -12,7 +12,7 @@ const DAEGUART = () => {
               "디자인과 기술의 융합을 통해 예술적 감각과 디지털 기술을 동시에 발전시키는 방법을 제시했으며, 이를 통해 참여자들은 실질적이고 창의적인 영감을 얻을 수 있었습니다",
             ]}
           />
-        </Box>
+        </Mix>
         <Image url="https://assets.visionarylabstech.com/post/portfolio/daeguart/1.jpg" />
       </Row>
       <Album
