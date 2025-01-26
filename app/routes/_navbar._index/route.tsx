@@ -84,7 +84,7 @@ export default function Home() {
         <div id="background">
           <div className="filter" />
           <video autoPlay loop muted playsInline>
-            <source src="/assets/home/main.mp4" type="video/mp4" />
+            <source src="https://assets.visionarylabstech.com/home/main.mp4" type="video/mp4" />
           </video>
         </div>
         <div id="page" className="main">
@@ -109,11 +109,11 @@ export default function Home() {
           <div className="container">
             <Video
               urls={[
-                "/assets/home/wyv/1.mp4",
-                "/assets/home/wyv/2.mp4",
-                "/assets/home/wyv/3.mp4",
-                "/assets/home/wyv/4.mp4",
-                "/assets/home/wyv/5.mp4",
+                "https://assets.visionarylabstech.com/home/wyv/1.mp4",
+                "https://assets.visionarylabstech.com/home/wyv/2.mp4",
+                "https://assets.visionarylabstech.com/home/wyv/3.mp4",
+                "https://assets.visionarylabstech.com/home/wyv/4.mp4",
+                "https://assets.visionarylabstech.com/home/wyv/5.mp4",
               ]}
             />
           </div>
@@ -136,7 +136,7 @@ export default function Home() {
       <div id="page-container">
         <div id="background">
           <div className="filter" />
-          <img src="/assets/home/xr.png" alt="" />
+          <img src="https://assets.visionarylabstech.com/home/xr.png" alt="" />
         </div>
         <div id="page" className="xr">
           <div className="title-container">
@@ -190,7 +190,7 @@ export default function Home() {
                     <div className="images">
                       {card.images.map((image, index) => (
                         <div className="image" key={index}>
-                          <img src={`/assets/home/xr/${image}.png`} alt="" />
+                          <img src={`https://assets.visionarylabstech.com/home/xr/${image}.png`} alt="" />
                         </div>
                       ))}
                     </div>
@@ -211,10 +211,10 @@ export default function Home() {
       <div id="page-container">
         <div id="background">
           <div className="filter" />
-          <img src="/assets/home/vdorm.png" alt="" />
+          <img src="https://assets.visionarylabstech.com/home/vdorm.png" alt="" />
         </div>
         <div id="page" className="vdorm">
-          <img src="/assets/home/vdormlogo.png" alt="" />
+          <img src="https://assets.visionarylabstech.com/home/vdormlogo.png" alt="" />
           <div className="title">
             <h1 className="title-l">V-DORM</h1>
             <h1 className="title-l">Production</h1>
@@ -266,10 +266,10 @@ export default function Home() {
             <p className="body-s">바로 지금, VisionaryLabs와 함께하고 있는 파트너입니다.</p>
           </div>
           <div className="content">
-            <img src={"/assets/home/partners/1.png"} alt="" />
-            <img src={"/assets/home/partners/2.png"} alt="" />
-            <img src={"/assets/home/partners/3.png"} alt="" />
-            <img src={"/assets/home/partners/4.png"} alt="" />
+            <img src={"https://assets.visionarylabstech.com/home/partners/1.png"} alt="" />
+            <img src={"https://assets.visionarylabstech.com/home/partners/2.png"} alt="" />
+            <img src={"https://assets.visionarylabstech.com/home/partners/3.png"} alt="" />
+            <img src={"https://assets.visionarylabstech.com/home/partners/4.png"} alt="" />
           </div>
         </div>
       </div>

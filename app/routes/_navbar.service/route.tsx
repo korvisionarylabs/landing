@@ -37,7 +37,7 @@ export default function Service() {
       <div id="page-container">
         <div id="background">
           <div className="filter" />
-          <img src="/assets/service/section.png" alt="" />
+          <img src="https://assets.visionarylabstech.com/service/section.png" alt="" />
         </div>
         <div id="page" className="section">
           <div className="container">
@@ -82,11 +82,11 @@ export default function Service() {
                   <Video
                     abs
                     urls={[
-                      "/assets/service/ma/1.mp4",
-                      "/assets/service/ma/2.mp4",
-                      "/assets/service/ma/3.mp4",
-                      "/assets/service/ma/4.mp4",
-                      "/assets/service/ma/5.mp4",
+                      "https://assets.visionarylabstech.com/service/ma/1.mp4",
+                      "https://assets.visionarylabstech.com/service/ma/2.mp4",
+                      "https://assets.visionarylabstech.com/service/ma/3.mp4",
+                      "https://assets.visionarylabstech.com/service/ma/4.mp4",
+                      "https://assets.visionarylabstech.com/service/ma/5.mp4",
                     ]}
                   />
                 </div>
@@ -183,12 +183,12 @@ export default function Service() {
                   <Video
                     abs
                     urls={[
-                      "/assets/service/igc/1.mp4",
-                      "/assets/service/igc/2.mp4",
-                      "/assets/service/igc/3.mp4",
-                      "/assets/service/igc/4.mp4",
-                      "/assets/service/igc/5.mp4",
-                      "/assets/service/igc/6.mp4",
+                      "https://assets.visionarylabstech.com/service/igc/1.mp4",
+                      "https://assets.visionarylabstech.com/service/igc/2.mp4",
+                      "https://assets.visionarylabstech.com/service/igc/3.mp4",
+                      "https://assets.visionarylabstech.com/service/igc/4.mp4",
+                      "https://assets.visionarylabstech.com/service/igc/5.mp4",
+                      "https://assets.visionarylabstech.com/service/igc/6.mp4",
                     ]}
                   />
                 </div>
@@ -221,9 +221,9 @@ export default function Service() {
           <div className="section middle igc">
             <div className="item first">
               <div className="thumbnail">
-                <Image url="/assets/service/igc/1-1.png" />
-                <Image url="/assets/service/igc/1-2.png" />
-                <Image url="/assets/service/igc/1-3.gif" />
+                <Image url="https://assets.visionarylabstech.com/service/igc/1-1.png" />
+                <Image url="https://assets.visionarylabstech.com/service/igc/1-2.png" />
+                <Image url="https://assets.visionarylabstech.com/service/igc/1-3.gif" />
               </div>
               <div className="content">
                 <div className="title">
@@ -239,8 +239,8 @@ export default function Service() {
             </div>
             <div className="item second">
               <div className="thumbnail">
-                <Image url="/assets/service/igc/2-1.gif" />
-                <Image url="/assets/service/igc/2-2.png" />
+                <Image url="https://assets.visionarylabstech.com/service/igc/2-1.gif" />
+                <Image url="https://assets.visionarylabstech.com/service/igc/2-2.png" />
               </div>
               <div className="content">
                 <div className="title">
@@ -296,7 +296,7 @@ export default function Service() {
       <div id="page-container">
         <div id="background">
           <div className="filter" />
-          <img src="/assets/service/section.png" alt="" />
+          <img src="https://assets.visionarylabstech.com/service/section.png" alt="" />
         </div>
         <div id="page" className="section">
           <div className="container">
@@ -344,7 +344,7 @@ export default function Service() {
             <div className="media">
               <div className="player">
                 <div className="viewer">
-                  <Video abs urls={["/assets/service/vps/1.mp4"]} />
+                  <Video abs urls={["https://assets.visionarylabstech.com/service/vps/1.mp4"]} />
                 </div>
                 <div className="progress">{/* */}</div>
               </div>
@@ -353,8 +353,8 @@ export default function Service() {
           <div className="section middle igc">
             <div className="item first">
               <div className="thumbnail">
-                <Image url="/assets/service/vps/1-1.png" />
-                <Image url="/assets/service/vps/1-2.png" />
+                <Image url="https://assets.visionarylabstech.com/service/vps/1-1.png" />
+                <Image url="https://assets.visionarylabstech.com/service/vps/1-2.png" />
               </div>
               <div className="content">
                 <div className="title">
@@ -373,8 +373,8 @@ export default function Service() {
             </div>
             <div className="item second">
               <div className="thumbnail">
-                <Image url="/assets/service/vps/2-1.png" />
-                <Image url="/assets/service/vps/2-2.png" />
+                <Image url="https://assets.visionarylabstech.com/service/vps/2-1.png" />
+                <Image url="https://assets.visionarylabstech.com/service/vps/2-2.png" />
               </div>
               <div className="content">
                 <div className="title">
@@ -457,7 +457,7 @@ export default function Service() {
           <div className="vdorm">
             <div id="background">
               <div className="filter" />
-              <img src="/assets/service/vps/vdorm.png" alt="" />
+              <img src="https://assets.visionarylabstech.com/service/vps/vdorm.png" alt="" />
             </div>
             <div className="chip">
               <p className="body-s-b">Entertainment</p>
@@ -484,9 +484,15 @@ export default function Service() {
               </p>
             </div>
             <div className="items">
-              <img src="/assets/service/vps/package1.gif" alt="" />
-              <img src="/assets/service/vps/package2.gif" alt="" />
-              <video autoPlay loop muted playsInline src="/assets/service/vps/package3.mp4" />
+              <img src="https://assets.visionarylabstech.com/service/vps/package1.gif" alt="" />
+              <img src="https://assets.visionarylabstech.com/service/vps/package2.gif" alt="" />
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                src="https://assets.visionarylabstech.com/service/vps/package3.mp4"
+              />
             </div>
           </div>
           <div className="pack">
@@ -524,9 +530,9 @@ export default function Service() {
           <div className="section middle igc">
             <div className="item first">
               <div className="thumbnail">
-                <Image url="/assets/service/vdorm/1-1.png" />
-                <Image url="/assets/service/vdorm/1-2.png" />
-                <Image url="/assets/service/vdorm/1-3.png" />
+                <Image url="https://assets.visionarylabstech.com/service/vdorm/1-1.png" />
+                <Image url="https://assets.visionarylabstech.com/service/vdorm/1-2.png" />
+                <Image url="https://assets.visionarylabstech.com/service/vdorm/1-3.png" />
               </div>
               <div className="content">
                 <div className="title">
@@ -544,8 +550,8 @@ export default function Service() {
             </div>
             <div className="item second">
               <div className="thumbnail">
-                <Image url="/assets/service/vdorm/2-1.png" />
-                <Image url="/assets/service/vdorm/2-2.png" />
+                <Image url="https://assets.visionarylabstech.com/service/vdorm/2-1.png" />
+                <Image url="https://assets.visionarylabstech.com/service/vdorm/2-2.png" />
               </div>
               <div className="content">
                 <div className="title">
@@ -595,7 +601,7 @@ export default function Service() {
       <div id="page-container">
         <div id="background">
           <div className="filter" />
-          <img src="/assets/service/section.png" alt="" />
+          <img src="https://assets.visionarylabstech.com/service/section.png" alt="" />
         </div>
         <div id="page" className="section">
           <div className="container">

@@ -235,7 +235,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("/assets/logo.svg");
+  background-image: url("https://assets.visionarylabstech.com/icons/logo.svg");
 }
 @media (max-width: 1199px) {
   #footer .inner.bottom .vl .logo {
@@ -310,10 +310,10 @@
   background-position: center center;
 }
 #footer .inner.bottom .items .item .icons .icon.facebook {
-  background-image: url("/assets/facebook.svg");
+  background-image: url("https://assets.visionarylabstech.com/icons/facebook.svg");
 }
 #footer .inner.bottom .items .item .icons .icon.instagram {
-  background-image: url("/assets/instagram.svg");
+  background-image: url("https://assets.visionarylabstech.com/icons/instagram.svg");
 }
 #footer .inner.bottom .items .item .download {
   align-self: flex-start;

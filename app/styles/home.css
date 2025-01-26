@@ -539,7 +539,7 @@
   content: "";
   width: 24px;
   height: 24px;
-  background-image: url("/assets/home/star.svg");
+  background-image: url("https://assets.visionarylabstech.com/home/star.svg");
 }
 
 #page.vdorm {
@@ -623,14 +623,14 @@
   width: 12px;
   height: 12px;
   margin: 3px;
-  background-image: url("/assets/left.svg");
+  background-image: url("https://assets.visionarylabstech.com/icons/left.svg");
 }
 #page.post .title-container .sub .control.right::after {
   content: "";
   width: 12px;
   height: 12px;
   margin: 3px;
-  background-image: url("/assets/right.svg");
+  background-image: url("https://assets.visionarylabstech.com/icons/right.svg");
 }
 #page.post .title-container .sub .selector {
   flex-direction: row;
@@ -793,7 +793,7 @@
   width: 13px;
   height: 11.5px;
   margin: 3px 3px 4px 2px;
-  background-image: url("/assets/send.svg");
+  background-image: url("https://assets.visionarylabstech.com/icons/send.svg");
 }
 #page.contact .container .left .submit p {
   color: #C670FF;

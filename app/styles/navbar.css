@@ -246,10 +246,10 @@
   background-position: center center;
 }
 #navbar-container #navbar #links .item.facebook {
-  background-image: url("/assets/facebook.svg");
+  background-image: url("https://assets.visionarylabstech.com/icons/facebook.svg");
 }
 #navbar-container #navbar #links .item.instagram {
-  background-image: url("/assets/instagram.svg");
+  background-image: url("https://assets.visionarylabstech.com/icons/instagram.svg");
 }
 
 /*# sourceMappingURL=navbar.css.map */

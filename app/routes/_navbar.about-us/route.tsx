@@ -212,7 +212,7 @@ export default function AboutUs() {
         <div id="background">
           <div className="filter" />
           <video autoPlay loop muted playsInline>
-            <source src="/assets/about-us/main.mp4" type="video/mp4" />
+            <source src="https://assets.visionarylabstech.com/about-us/main.mp4" type="video/mp4" />
           </video>
         </div>
         <div id="page" className="main">
@@ -605,10 +605,10 @@ export default function AboutUs() {
                   <p className="body-s-b">3D & VFX</p>
                 </div>
                 <div className="box first">
-                  <img src="/assets/about-us/whatweuse/3dvfx/1.png" alt="1" />
-                  <img src="/assets/about-us/whatweuse/3dvfx/2.png" alt="2" />
-                  <img src="/assets/about-us/whatweuse/3dvfx/3.png" alt="3" />
-                  <img src="/assets/about-us/whatweuse/3dvfx/4.png" alt="4" />
+                  <img src="https://assets.visionarylabstech.com/about-us/whatweuse/3dvfx/1.png" alt="1" />
+                  <img src="https://assets.visionarylabstech.com/about-us/whatweuse/3dvfx/2.png" alt="2" />
+                  <img src="https://assets.visionarylabstech.com/about-us/whatweuse/3dvfx/3.png" alt="3" />
+                  <img src="https://assets.visionarylabstech.com/about-us/whatweuse/3dvfx/4.png" alt="4" />
                 </div>
               </div>
               <div className="item">
@@ -616,9 +616,9 @@ export default function AboutUs() {
                   <p className="body-s-b">Gragphic Design</p>
                 </div>
                 <div className="box second">
-                  <img src="/assets/about-us/whatweuse/graphicdesign/1.png" alt="1" />
-                  <img src="/assets/about-us/whatweuse/graphicdesign/2.png" alt="2" />
-                  <img src="/assets/about-us/whatweuse/graphicdesign/3.png" alt="3" />
+                  <img src="https://assets.visionarylabstech.com/about-us/whatweuse/graphicdesign/1.png" alt="1" />
+                  <img src="https://assets.visionarylabstech.com/about-us/whatweuse/graphicdesign/2.png" alt="2" />
+                  <img src="https://assets.visionarylabstech.com/about-us/whatweuse/graphicdesign/3.png" alt="3" />
                 </div>
               </div>
             </div>

@@ -338,11 +338,11 @@
 }
 #page.mp .section.middle.ma .item.first .thumbnail {
   order: 9;
-  background-image: url("/assets/service/ma/1.png");
+  background-image: url("https://assets.visionarylabstech.com/service/ma/1.png");
 }
 #page.mp .section.middle.ma .item.second .thumbnail {
   order: 11;
-  background-image: url("/assets/service/ma/2.png");
+  background-image: url("https://assets.visionarylabstech.com/service/ma/2.png");
 }
 @media (min-width: 0px) and (max-width: 809px) {
   #page.mp .section.middle.ma .item.second .thumbnail {
@@ -399,7 +399,7 @@
   width: 28px;
   height: 28px;
   background-size: cover;
-  background-image: url("/assets/service/ma/star.svg");
+  background-image: url("https://assets.visionarylabstech.com/service/ma/star.svg");
 }
 #page.mp .section.middle .item .content .mix {
   gap: 8px;
@@ -424,7 +424,7 @@
   width: 28px;
   height: 36px;
   background-size: cover;
-  background-image: url("/assets/service/ma/symbol.svg");
+  background-image: url("https://assets.visionarylabstech.com/service/ma/symbol.svg");
 }
 #page.mp .section.bottom .up {
   align-self: stretch;
@@ -531,7 +531,7 @@
   rotate: -90deg;
   margin: -3px 3px;
   background-size: cover;
-  background-image: url("/assets/service/vps/symbol.svg");
+  background-image: url("https://assets.visionarylabstech.com/service/vps/symbol.svg");
 }
 @media (max-width: 1199px) {
   #page.vps .section.flow .symbol {
@@ -580,7 +580,7 @@
   width: 28px;
   height: 28px;
   background-size: cover;
-  background-image: url("/assets/service/ma/star.svg");
+  background-image: url("https://assets.visionarylabstech.com/service/ma/star.svg");
 }
 #page.vps .package .items {
   flex-direction: row;
@@ -640,13 +640,13 @@
   }
 }
 #page.vps .pack .box .thumbnail.first {
-  background-image: url("/assets/service/vps/package4.png");
+  background-image: url("https://assets.visionarylabstech.com/service/vps/package4.png");
 }
 #page.vps .pack .box .thumbnail.second {
-  background-image: url("/assets/service/vps/package5.png");
+  background-image: url("https://assets.visionarylabstech.com/service/vps/package5.png");
 }
 #page.vps .pack .box .thumbnail.third {
-  background-image: url("/assets/service/vps/package6.png");
+  background-image: url("https://assets.visionarylabstech.com/service/vps/package6.png");
 }
 #page.vps .pack .box .thumbnail img {
   object-fit: cover;
@@ -702,7 +702,7 @@
   height: 40px;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url("/assets/service/vps/1.svg");
+  background-image: url("https://assets.visionarylabstech.com/service/vps/1.svg");
 }
 #page.vps .comp .box .item.second::before {
   content: "";
@@ -710,7 +710,7 @@
   height: 40px;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url("/assets/service/vps/2.svg");
+  background-image: url("https://assets.visionarylabstech.com/service/vps/2.svg");
 }
 #page.vps .comp .box .item.third::before {
   content: "";
@@ -718,7 +718,7 @@
   height: 40px;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url("/assets/service/vps/3.svg");
+  background-image: url("https://assets.visionarylabstech.com/service/vps/3.svg");
 }
 #page.vps .comp .box .item .content {
   align-items: center;
@@ -853,16 +853,16 @@
   background-position: center center;
 }
 #page.vt .main .grid .row .thumbnail.first {
-  background-image: url("/assets/service/ec/1.jpg");
+  background-image: url("https://assets.visionarylabstech.com/service/ec/1.jpg");
 }
 #page.vt .main .grid .row .thumbnail.second {
-  background-image: url("/assets/service/ec/2.jpg");
+  background-image: url("https://assets.visionarylabstech.com/service/ec/2.jpg");
 }
 #page.vt .main .grid .row .thumbnail.third {
-  background-image: url("/assets/service/ec/3.jpg");
+  background-image: url("https://assets.visionarylabstech.com/service/ec/3.jpg");
 }
 #page.vt .main .grid .row .thumbnail.fourth {
-  background-image: url("/assets/service/ec/4.jpg");
+  background-image: url("https://assets.visionarylabstech.com/service/ec/4.jpg");
 }
 #page.vt .program {
   flex-direction: row;
@@ -907,7 +907,7 @@
   width: 28px;
   height: 28px;
   background-size: cover;
-  background-image: url("/assets/service/ma/star.svg");
+  background-image: url("https://assets.visionarylabstech.com/service/ma/star.svg");
 }
 #page.vt .program .left .items {
   display: grid;
@@ -951,7 +951,7 @@
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url("/assets/service/ma/symbol.svg");
+  background-image: url("https://assets.visionarylabstech.com/service/ma/symbol.svg");
 }
 #page.vt .program .right .item {
   flex-direction: row;
@@ -968,19 +968,19 @@
   background-repeat: no-repeat;
 }
 #page.vt .program .right .item .circle.first {
-  background-image: url("/assets/service/ec/1.svg");
+  background-image: url("https://assets.visionarylabstech.com/service/ec/1.svg");
 }
 #page.vt .program .right .item .circle.second {
-  background-image: url("/assets/service/ec/2.svg");
+  background-image: url("https://assets.visionarylabstech.com/service/ec/2.svg");
 }
 #page.vt .program .right .item .circle.third {
-  background-image: url("/assets/service/ec/3.svg");
+  background-image: url("https://assets.visionarylabstech.com/service/ec/3.svg");
 }
 #page.vt .program .right .item .circle.fourth {
-  background-image: url("/assets/service/ec/4.svg");
+  background-image: url("https://assets.visionarylabstech.com/service/ec/4.svg");
 }
 #page.vt .program .right .item .circle.fifth {
-  background-image: url("/assets/service/ec/5.svg");
+  background-image: url("https://assets.visionarylabstech.com/service/ec/5.svg");
 }
 
 .thumbnail {

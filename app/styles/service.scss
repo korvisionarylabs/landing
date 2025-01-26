@@ -206,14 +206,14 @@
         &.first {
           .thumbnail {
             order: 9;
-            background-image: url("/assets/service/ma/1.png");
+            background-image: url("https://assets.visionarylabstech.com/service/ma/1.png");
           }
         }
 
         &.second {
           .thumbnail {
             order: 11;
-            background-image: url("/assets/service/ma/2.png");
+            background-image: url("https://assets.visionarylabstech.com/service/ma/2.png");
 
             @include respond-to-only('phone') {
               order: 9;
@@ -283,7 +283,7 @@
             height: 28px;
 
             background-size: cover;
-            background-image: url('/assets/service/ma/star.svg');
+            background-image: url('https://assets.visionarylabstech.com/service/ma/star.svg');
           }
         }
 
@@ -319,7 +319,7 @@
       height: 36px;
 
       background-size: cover;
-      background-image: url("/assets/service/ma/symbol.svg");
+      background-image: url("https://assets.visionarylabstech.com/service/ma/symbol.svg");
     }
 
     .up {
@@ -449,7 +449,7 @@
       margin: -3px 3px;
 
       background-size: cover;
-      background-image: url("/assets/service/vps/symbol.svg");
+      background-image: url("https://assets.visionarylabstech.com/service/vps/symbol.svg");
 
       @include respond-to-down('tablet') {
         rotate: unset;
@@ -505,7 +505,7 @@
           height: 28px;
 
           background-size: cover;
-          background-image: url('/assets/service/ma/star.svg');
+          background-image: url('https://assets.visionarylabstech.com/service/ma/star.svg');
         }
       }
     }
@@ -568,15 +568,15 @@
         border-radius: 8px;
 
         &.first {
-          background-image: url("/assets/service/vps/package4.png");
+          background-image: url("https://assets.visionarylabstech.com/service/vps/package4.png");
         }
 
         &.second {
-          background-image: url("/assets/service/vps/package5.png");
+          background-image: url("https://assets.visionarylabstech.com/service/vps/package5.png");
         }
 
         &.third {
-          background-image: url("/assets/service/vps/package6.png");
+          background-image: url("https://assets.visionarylabstech.com/service/vps/package6.png");
         }
 
         img {
@@ -644,7 +644,7 @@
             height: 40px;
             background-position: center center;
             background-repeat: no-repeat;
-            background-image: url("/assets/service/vps/1.svg");
+            background-image: url("https://assets.visionarylabstech.com/service/vps/1.svg");
           }
         }
 
@@ -655,7 +655,7 @@
             height: 40px;
             background-position: center center;
             background-repeat: no-repeat;
-            background-image: url("/assets/service/vps/2.svg");
+            background-image: url("https://assets.visionarylabstech.com/service/vps/2.svg");
           }
         }
 
@@ -666,7 +666,7 @@
             height: 40px;
             background-position: center center;
             background-repeat: no-repeat;
-            background-image: url("/assets/service/vps/3.svg");
+            background-image: url("https://assets.visionarylabstech.com/service/vps/3.svg");
           }
         }
 
@@ -815,19 +815,19 @@
           background-position: center center;
 
           &.first {
-            background-image: url("/assets/service/ec/1.jpg");
+            background-image: url("https://assets.visionarylabstech.com/service/ec/1.jpg");
           }
 
           &.second {
-            background-image: url("/assets/service/ec/2.jpg");
+            background-image: url("https://assets.visionarylabstech.com/service/ec/2.jpg");
           }
 
           &.third {
-            background-image: url("/assets/service/ec/3.jpg");
+            background-image: url("https://assets.visionarylabstech.com/service/ec/3.jpg");
           }
 
           &.fourth {
-            background-image: url("/assets/service/ec/4.jpg");
+            background-image: url("https://assets.visionarylabstech.com/service/ec/4.jpg");
           }
         }
       }
@@ -876,7 +876,7 @@
             height: 28px;
 
             background-size: cover;
-            background-image: url('/assets/service/ma/star.svg');
+            background-image: url('https://assets.visionarylabstech.com/service/ma/star.svg');
           }
         }
       }
@@ -925,7 +925,7 @@
         background-size: contain;
         background-position: center center;
         background-repeat: no-repeat;
-        background-image: url("/assets/service/ma/symbol.svg");
+        background-image: url("https://assets.visionarylabstech.com/service/ma/symbol.svg");
       }
 
       .item {
@@ -944,23 +944,23 @@
           background-repeat: no-repeat;
 
           &.first {
-            background-image: url("/assets/service/ec/1.svg");
+            background-image: url("https://assets.visionarylabstech.com/service/ec/1.svg");
           }
 
           &.second {
-            background-image: url("/assets/service/ec/2.svg");
+            background-image: url("https://assets.visionarylabstech.com/service/ec/2.svg");
           }
 
           &.third {
-            background-image: url("/assets/service/ec/3.svg");
+            background-image: url("https://assets.visionarylabstech.com/service/ec/3.svg");
           }
 
           &.fourth {
-            background-image: url("/assets/service/ec/4.svg");
+            background-image: url("https://assets.visionarylabstech.com/service/ec/4.svg");
           }
 
           &.fifth {
-            background-image: url("/assets/service/ec/5.svg");
+            background-image: url("https://assets.visionarylabstech.com/service/ec/5.svg");
           }
         }
       }
