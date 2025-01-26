@@ -396,6 +396,10 @@
 
 #mix {
   gap: 20px;
+
+  @include respond-to-down('tablet') {
+    min-width: unset !important;
+  }
 }
 
 #list {
@@ -429,6 +433,10 @@
       flex: 1;
       flex-direction: row;
       justify-content: space-between;
+
+      @include respond-to-only('phone') {
+        flex-direction: column;
+      }
 
       .key {
         color: $gs-1;
