@@ -48,7 +48,7 @@ export default function Post() {
               <NavLink key={item.slug} to={`/${type}/${item.slug}`}>
                 <div className="item">
                   <div className="thumbnail">
-                    <Image url={`/post/${type}/${item.slug}/thumbnail.jpg`} />
+                    <Image url={`https://assets.visionarylabstech.com/post/${type}/${item.slug}/thumbnail.jpg`} />
                   </div>
                   <div className="info">
                     <p className="body-s">{item.date}</p>

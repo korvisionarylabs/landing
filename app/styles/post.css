@@ -237,4 +237,213 @@
   color: #8B90AD;
 }
 
+#news {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overscroll-behavior-y: none;
+}
+#news #view {
+  margin: 128px auto 64px;
+  width: 100%;
+  max-width: 860px;
+  padding: 32px 0;
+  gap: 32px;
+  white-space: wrap;
+}
+@media (min-width: 1200px) and (max-width: 1599px) {
+  #news #view {
+    width: calc(100% - 84px - 84px);
+  }
+}
+@media (min-width: 810px) and (max-width: 1199px) {
+  #news #view {
+    width: calc(100% - 32px - 32px);
+  }
+}
+@media (min-width: 0px) and (max-width: 809px) {
+  #news #view {
+    width: calc(100% - 20px - 20px);
+  }
+}
+#news #view .title {
+  gap: 12px;
+  padding-bottom: 12px;
+}
+#news #view .thumbnail {
+  padding-top: 56.25%;
+  border-radius: 12px;
+  background-color: #25262E;
+  overflow: hidden;
+}
+#news #view .thumbnail * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+}
+#news #view .divider {
+  height: 1px;
+  background-color: #25262E;
+  margin: 32px 0;
+}
+#news #view .buttons {
+  flex-direction: row;
+  justify-content: center;
+  gap: 12px;
+}
+#news #view .buttons .button {
+  gap: 4px;
+  padding: 10px 16px;
+  background-color: #25262E;
+  border-radius: 96px;
+  cursor: pointer;
+}
+
+#portfolio {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overscroll-behavior-y: none;
+}
+#portfolio #view {
+  margin: 128px auto 64px;
+  width: 100%;
+  max-width: 1420px;
+  padding: 32px 0;
+  gap: 32px;
+  white-space: wrap;
+}
+@media (min-width: 1200px) and (max-width: 1599px) {
+  #portfolio #view {
+    width: calc(100% - 84px - 84px);
+  }
+}
+@media (min-width: 810px) and (max-width: 1199px) {
+  #portfolio #view {
+    width: calc(100% - 32px - 32px);
+  }
+}
+@media (min-width: 0px) and (max-width: 809px) {
+  #portfolio #view {
+    width: calc(100% - 20px - 20px);
+  }
+}
+#portfolio #view .header {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (min-width: 0px) and (max-width: 809px) {
+  #portfolio #view .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+#portfolio #view .header .title {
+  gap: 12px;
+  padding-bottom: 12px;
+}
+#portfolio #view .header .title .tags {
+  flex-direction: row;
+  gap: 8px;
+}
+@media (min-width: 0px) and (max-width: 809px) {
+  #portfolio #view .header .title .tags {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+#portfolio #view .header .title .tags .tag {
+  padding: 8px 12px;
+  background-color: #191A1F;
+  border: 1px solid #25262E;
+  border-radius: 96px;
+}
+#portfolio #view .header .title .tags .tag p {
+  color: #C670FF;
+}
+#portfolio #view .header .extra {
+  gap: 8px;
+}
+#portfolio #view .header .extra .item {
+  flex-direction: row;
+  gap: 20px;
+}
+#portfolio #view .header .extra .item .body-m {
+  color: #BCC1D6;
+}
+#portfolio #view .thumbnail {
+  padding-top: 56.25%;
+  border-radius: 12px;
+  background-color: #25262E;
+  overflow: hidden;
+}
+#portfolio #view .thumbnail * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+}
+#portfolio #view .divider {
+  height: 1px;
+  background-color: #25262E;
+  margin: 32px 0;
+}
+#portfolio #view .buttons {
+  flex-direction: row;
+  justify-content: center;
+  gap: 12px;
+}
+#portfolio #view .buttons .button {
+  gap: 4px;
+  padding: 10px 16px;
+  background-color: #25262E;
+  border-radius: 96px;
+  cursor: pointer;
+}
+
+#album {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (min-width: 0px) and (max-width: 809px) {
+  #album {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+#album .image {
+  padding-top: 56.25%;
+  background-color: #25262E;
+  overflow: hidden;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 12px;
+}
+
+#images {
+  display: grid;
+  gap: 20px;
+}
+@media (min-width: 0px) and (max-width: 809px) {
+  #images {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+#images .image {
+  padding-top: 56.25%;
+  background-color: #25262E;
+  overflow: hidden;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 12px;
+}
+
 /*# sourceMappingURL=post.css.map */

@@ -3,11 +3,11 @@ import "~/styles/post.css";
 import type { LoaderFunctionArgs } from "@remix-run/node";
 import { type MetaFunction, NavLink, useParams } from "@remix-run/react";
 import { Image } from "~/components/image";
-import { newsList } from "~/data/post/news";
+import { portfolioList } from "~/data/post/portfolio";
 
 export async function loader({ params }: LoaderFunctionArgs) {
   const { slug } = params;
-  const post = newsList.find((item) => item.slug === slug);
+  const post = portfolioList.find((item) => item.slug === slug);
 
   return {
     slug,
@@ -37,15 +37,15 @@ export const meta: MetaFunction<typeof loader> = ({ data }) => {
   ];
 };
 
-export default function News() {
+export default function Portfolio() {
   const params = useParams();
   const { slug } = params;
 
-  const post = newsList.find((item) => item.slug === slug);
+  const post = portfolioList.find((item) => item.slug === slug);
 
   if (!post) {
     return (
-      <div id="news">
+      <div id="portfolio">
         <div id="view">
           <h3 className="title-m">404</h3>
         </div>
@@ -54,19 +54,34 @@ export default function News() {
   }
 
   return (
-    <div id="news">
+    <div id="portfolio">
       <div id="view">
-        <div className="title">
-          <h3 className="title-m">{post.title}</h3>
-          <h5 className="title-s">{post.subtitle}</h5>
+        <div className="header">
+          <div className="title">
+            <div className="tags">
+              {post.tags.map((tag) => (
+                <div key={tag} className="tag">
+                  <p className="body-s-b">{tag}</p>
+                </div>
+              ))}
+            </div>
+            <h3 className="title-m">{post.title}</h3>
+          </div>
+          <div className="extra">
+            {post.extra.map((item) => (
+              <div className="item" key={item.key}>
+                <p className="body-m-b">{item.key}</p>
+                <p className="body-m">{item.value}</p>
+              </div>
+            ))}
+          </div>
         </div>
         <div className="thumbnail">
-          <Image url={`https://assets.visionarylabstech.com/post/news/${slug}/thumbnail.jpg`} />
+          <Image url={`https://assets.visionarylabstech.com/post/portfolio/${slug}/thumbnail.jpg`} />
         </div>
-        {post.post()}
         <div className="divider" />
         <div className="buttons">
-          <NavLink to="/post/news">
+          <NavLink to="/post/portfolio">
             <div className="button">
               <p className="body-s-b">리스트로 돌아가기</p>
             </div>
