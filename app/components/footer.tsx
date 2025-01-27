@@ -34,7 +34,7 @@ const Footer = ({ text = true }: { text?: boolean }) => {
           <p className="body-s cr desktop">ⓒ 2024 VisionaryLabs. All Rights Reserved.</p>
         </div>
         <div className="items">
-          <div className="item">
+          {/* <div className="item">
             <h5 className="title-s">이용안내</h5>
             <div className="links">
               <a href="#/" className="body-s">
@@ -44,12 +44,16 @@ const Footer = ({ text = true }: { text?: boolean }) => {
                 개인정보처리방침
               </a>
             </div>
-          </div>
+          </div> */}
           <div className="item">
             <h5 className="title-s">SNS</h5>
             <div className="icons">
-              <a href="https://facebook.com" target="_blank" className="icon facebook" rel="noreferrer">
-                {/* Facebook */}
+              <a
+                href="https://www.youtube.com/@VisionaryLabs-dr5ub"
+                target="_blank"
+                className="icon youtube"
+                rel="noreferrer">
+                {/* youtube */}
               </a>
               <a href="https://instagram.com" target="_blank" className="icon instagram" rel="noreferrer">
                 {/* Instagram */}

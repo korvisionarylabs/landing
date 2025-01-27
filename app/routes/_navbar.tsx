@@ -43,12 +43,12 @@ export default function Navbar() {
           </div>
           <div id="links">
             <a
-              href="https://facebook.com"
+              href="https://www.youtube.com/@VisionaryLabs-dr5ub"
               target="_blank"
-              className="item facebook"
+              className="item youtube"
               rel="noreferrer"
-              aria-label="Facebook">
-              {/* Facebook */}
+              aria-label="youtube">
+              {/* youtube */}
             </a>
             <a
               href="https://instagram.com"
