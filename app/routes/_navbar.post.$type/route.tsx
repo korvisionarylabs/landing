@@ -25,8 +25,8 @@ export default function Post() {
   const { type } = params;
 
   return (
-    <div id="pages">
-      <div id="page-container" className="no-min">
+    <>
+      <div className="page-container no-min">
         <div id="page" className="post">
           <div className="header">
             <h3 className="title-m">Post</h3>
@@ -62,6 +62,6 @@ export default function Post() {
       </div>
 
       <Footer text={false} />
-    </div>
+    </>
   );
 }

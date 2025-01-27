@@ -22,7 +22,17 @@ html {
 }
 
 body {
-  overflow: hidden;
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overscroll-behavior-y: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 a {
@@ -35,71 +45,54 @@ div {
   position: relative;
 }
 
-#pages {
-  display: block;
+.page-container {
   width: 100%;
-  height: 100%;
 
-  overflow-x: hidden;
-  overflow-y: scroll;
-  overscroll-behavior-y: none;
+  align-items: center;
+  min-height: 100dvh;
 
-  // scroll-snap-type: y mandatory;
-
-  &::-webkit-scrollbar {
-    display: none;
+  &.no-min {
+    min-height: auto;
   }
 
-  #page-container {
-    // scroll-snap-align: start end;
-    width: 100%;
-
+  #page {
+    flex: 1;
     align-items: center;
-    min-height: 100dvh;
+    justify-content: center;
 
-    &.no-min {
-      min-height: auto;
+    max-width: $max-width;
+
+    @include respond-to('desktop-small') {
+      width: calc(100% - 84px - 84px);
     }
 
-    #page {
-      flex: 1;
-      align-items: center;
-      justify-content: center;
-
-      max-width: $max-width;
-
-      @include respond-to('desktop-small') {
-        width: calc(100% - 84px - 84px);
-      }
-
-      @include respond-to('tablet') {
-        width: calc(100% - 32px - 32px);
-      }
-
-      @include respond-to('phone') {
-        width: calc(100% - 20px - 20px);
-      }
+    @include respond-to('tablet') {
+      width: calc(100% - 32px - 32px);
     }
 
-    #background {
+    @include respond-to('phone') {
+      width: calc(100% - 20px - 20px);
+    }
+  }
+
+  #background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    .filter {
       position: absolute;
       width: 100%;
       height: 100%;
-      z-index: -1;
+      background-color: $gs-10-t70
+    }
 
-      .filter {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: $gs-10-t70
-      }
-
-      video,
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+    video,
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 }

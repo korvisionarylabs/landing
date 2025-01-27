@@ -1,4 +1,4 @@
-import type { MetaFunction } from "@remix-run/react";
+import { type MetaFunction, NavLink } from "@remix-run/react";
 import { Footer } from "~/components/footer";
 import { Video } from "~/components/video";
 import "~/styles/home.css";
@@ -79,8 +79,8 @@ const xrProductions = [
 
 export default function Home() {
   return (
-    <div id="pages">
-      <div id="page-container">
+    <>
+      <div className="page-container">
         <div id="background">
           <div className="filter" />
           <video autoPlay loop muted playsInline>
@@ -104,7 +104,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="page-container">
+      <div className="page-container">
         <div id="page" className="vision">
           <div className="container">
             <Video
@@ -133,7 +133,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="page-container">
+      <div className="page-container">
         <div id="background">
           <div className="filter" />
           <img src="https://assets.visionarylabstech.com/home/xr.png" alt="" />
@@ -168,7 +168,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="page-container">
+      <div className="page-container">
         <div id="page" className="xr-production">
           {xrProductions.map((xrProduction, index) => (
             <div className="section" key={xrProduction.title}>
@@ -179,9 +179,11 @@ export default function Home() {
                 </div>
                 <div className="content">
                   <p className="body-s">{xrProduction.content}</p>
-                  <div className="more">
-                    <p className="body-s-b">자세히 알아보기</p>
-                  </div>
+                  <NavLink to={`/service#${index + 1}`}>
+                    <div className="more">
+                      <p className="body-s-b">자세히 알아보기</p>
+                    </div>
+                  </NavLink>
                 </div>
               </div>
               <div className="content">
@@ -208,7 +210,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="page-container">
+      <div className="page-container">
         <div id="background">
           <div className="filter" />
           <img src="https://assets.visionarylabstech.com/home/vdorm.png" alt="" />
@@ -228,7 +230,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <div id="page-container">
+      {/* <div className="page-container">
         <div id="page" className="post">
           <div className="title-container">
             <div className="title">
@@ -259,7 +261,7 @@ export default function Home() {
         </div>
       </div> */}
 
-      <div id="page-container">
+      <div className="page-container">
         <div id="page" className="partners">
           <div className="title">
             <h1 className="title-l gradient">Partners</h1>
@@ -274,7 +276,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="page-container">
+      <div className="page-container">
         <div id="page" className="contact">
           <div className="container">
             <div className="left">
@@ -360,13 +362,15 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="map">{/* */}</div>
+              <a className="map" href="https://map.naver.com/p/entry/place/11591569" target="_blank" rel="noreferrer">
+                {/* map */}
+              </a>
             </div>
           </div>
         </div>
       </div>
 
       <Footer />
-    </div>
+    </>
   );
 }
