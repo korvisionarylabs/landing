@@ -1,5 +1,6 @@
 import { type MetaFunction, NavLink } from "@remix-run/react";
 import { Footer } from "~/components/footer";
+import { Partners } from "~/components/partners";
 import { Video } from "~/components/video";
 import "~/styles/home.css";
 
@@ -268,10 +269,7 @@ export default function Home() {
             <p className="body-s">바로 지금, VisionaryLabs와 함께하고 있는 파트너입니다.</p>
           </div>
           <div className="content">
-            <img src={"https://assets.visionarylabstech.com/home/partners/1.png"} alt="" />
-            <img src={"https://assets.visionarylabstech.com/home/partners/2.png"} alt="" />
-            <img src={"https://assets.visionarylabstech.com/home/partners/3.png"} alt="" />
-            <img src={"https://assets.visionarylabstech.com/home/partners/4.png"} alt="" />
+            <Partners />
           </div>
         </div>
       </div>

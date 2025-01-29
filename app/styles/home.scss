@@ -566,7 +566,9 @@
   }
 
   .content {
+    width: 100dvw;
     gap: 26px;
+    align-items: center;
 
     @include respond-to('tablet') {
       gap: 34px;
@@ -575,6 +577,7 @@
     img {
       height: 96px;
       object-fit: contain;
+      margin-right: 76px;
     }
   }
 }

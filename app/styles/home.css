@@ -680,7 +680,9 @@
   gap: 16px;
 }
 #page.partners .content {
+  width: 100dvw;
   gap: 26px;
+  align-items: center;
 }
 @media (min-width: 810px) {
   #page.partners .content {
@@ -690,6 +692,7 @@
 #page.partners .content img {
   height: 96px;
   object-fit: contain;
+  margin-right: 76px;
 }
 
 #page.contact {
