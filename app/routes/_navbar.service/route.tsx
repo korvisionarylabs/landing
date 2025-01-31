@@ -1,6 +1,7 @@
 import type { MetaFunction } from "@remix-run/react";
 import { Footer } from "~/components/footer";
 import { Image } from "~/components/image";
+import { Indicator } from "~/components/indicator";
 import { Video } from "~/components/video";
 import "~/styles/service.css";
 
@@ -756,6 +757,7 @@ export default function Service() {
       </div>
 
       <Footer />
+      <Indicator items={["Marketing & Promotion", "Entertainment", "Education Content"]} />
     </>
   );
 }

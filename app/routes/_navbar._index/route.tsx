@@ -1,5 +1,7 @@
 import { type MetaFunction, NavLink } from "@remix-run/react";
+import { useEffect, useState } from "react";
 import { Footer } from "~/components/footer";
+import { Indicator } from "~/components/indicator";
 import { Partners } from "~/components/partners";
 import { Video } from "~/components/video";
 import "~/styles/home.css";
@@ -81,7 +83,7 @@ const xrProductions = [
 export default function Home() {
   return (
     <>
-      <div className="page-container">
+      <div className="page-container" id="1">
         <div id="background">
           <div className="filter" />
           <video autoPlay loop muted playsInline>
@@ -105,7 +107,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="page-container">
+      <div className="page-container" id="2">
         <div id="page" className="vision">
           <div className="container">
             <Video
@@ -134,7 +136,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="page-container">
+      <div className="page-container" id="3">
         <div id="background">
           <div className="filter" />
           <img src="https://assets.visionarylabstech.com/home/xr.png" alt="" />
@@ -211,7 +213,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="page-container">
+      <div className="page-container" id="4">
         <div id="background">
           <div className="filter" />
           <img src="https://assets.visionarylabstech.com/home/vdorm.png" alt="" />
@@ -231,38 +233,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <div className="page-container">
-        <div id="page" className="post">
-          <div className="title-container">
-            <div className="title">
-              <h1 className="title-l gradient">Post</h1>
-              <p className="body-s">VisionaryLabs가 지금까지 수행했던 프로젝트를 만나보세요.</p>
-            </div>
-            <div className="sub">
-              <div className="control left">
-                <p className="body-s">뒤로 넘기기</p>
-              </div>
-              <div className="selector">
-                <div className="select selected">
-                  <p>전체</p>
-                </div>
-                <div className="select">
-                  <p>News</p>
-                </div>
-                <div className="select">
-                  <p>Portfolio</p>
-                </div>
-              </div>
-              <div className="control right">
-                <p className="body-s">앞으로 넘기기</p>
-              </div>
-            </div>
-          </div>
-          <div className="content" />
-        </div>
-      </div> */}
-
-      <div className="page-container">
+      <div className="page-container" id="5">
         <div id="page" className="partners">
           <div className="title">
             <h1 className="title-l gradient">Partners</h1>
@@ -274,7 +245,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="page-container">
+      <div className="page-container" id="6">
         <div id="page" className="contact">
           <div className="container">
             <div className="left">
@@ -369,6 +340,7 @@ export default function Home() {
       </div>
 
       <Footer />
+      <Indicator items={["Introduce", "With Your Vision", "Production", "V-DORM", "Partners", "Contact"]} />
     </>
   );
 }

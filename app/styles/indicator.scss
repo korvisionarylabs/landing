@@ -1,0 +1,94 @@
+@use 'abstracts' as *;
+
+#indicator {
+  position: fixed;
+  z-index: 999;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background-color: $gs-9-t70;
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  border: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+  border-radius: 16px;
+  overflow: hidden;
+
+  width: 32px;
+  padding: 8px 0;
+
+  transition: all 0.3s;
+
+  &:hover {
+    padding: 8px;
+    width: 216px;
+
+    .item {
+      padding: 6px 0 6px 12px;
+
+      .icon {
+        min-width: 24px !important;
+        min-height: 24px !important;
+      }
+    }
+  }
+
+  .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    gap: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition: all 0.3s;
+
+    &.active {
+      .icon {
+        min-height: 34px;
+
+        &::after {
+          width: 18px !important;
+          height: 18px !important;
+          background-image: url(https://assets.visionarylabstech.com/icons/indicator/star.svg) !important;
+        }
+      }
+    }
+
+    &:hover {
+      background-color: $gs-1-t8;
+
+      .icon {
+        &::after {
+          width: 6px;
+          height: 6px;
+          background-image: url(https://assets.visionarylabstech.com/icons/indicator/dot-hover.svg);
+        }
+      }
+    }
+
+    p {
+      flex: 1;
+      min-width: 172px;
+    }
+
+    .icon {
+      align-items: center;
+      justify-content: center;
+
+      min-width: 32px;
+      min-height: 22px;
+
+      transition: all 0.3s;
+
+      &::after {
+        content: '';
+        width: 6px;
+        height: 6px;
+        background-image: url(https://assets.visionarylabstech.com/icons/indicator/dot.svg);
+      }
+    }
+  }
+}
