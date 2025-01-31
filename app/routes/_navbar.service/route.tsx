@@ -147,13 +147,13 @@ export default function Service() {
               </div>
               <div className="divider" />
               <div className="item">
-                <h5 className="title-s">콘텐츠 기획 - 디자인 - 개발</h5>
-                <p className="body-s">전문 콘텐츠 PD 그룹의 콘텐츠 제작 올인원 프로세스</p>
+                <h5 className="title-s">CG, VFX - 3D 그래픽 디자인</h5>
+                <p className="body-s">사실적인 그래픽 퍼포먼스를 위한 맞춤 디자인 서비스</p>
               </div>
               <div className="divider" />
               <div className="item">
-                <h5 className="title-s">콘텐츠 기획 - 디자인 - 개발</h5>
-                <p className="body-s">전문 콘텐츠 PD 그룹의 콘텐츠 제작 올인원 프로세스</p>
+                <h5 className="title-s">Unreal - Render Engine 파이프라인</h5>
+                <p className="body-s">시뮬레이션 머신 + 버추얼 엔진 등 기술 자체 개발 & 적용</p>
               </div>
             </div>
             <div className="symbol" />
