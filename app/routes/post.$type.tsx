@@ -1,6 +1,7 @@
 import "~/styles/post.css";
 
 import { type MetaFunction, NavLink, useParams } from "@remix-run/react";
+import { Container } from "~/components/container";
 import { Footer } from "~/components/footer";
 import { Image } from "~/components/image";
 import { newsList } from "~/data/post/news";
@@ -25,7 +26,7 @@ export default function Post() {
   const { type } = params;
 
   return (
-    <>
+    <Container>
       <div className="page-container no-min">
         <div id="page" className="post">
           <div className="header">
@@ -62,6 +63,6 @@ export default function Post() {
       </div>
 
       <Footer text={false} />
-    </>
+    </Container>
   );
 }

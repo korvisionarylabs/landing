@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/react";
+import { Container } from "~/components/container";
 import { Footer } from "~/components/footer";
 import { Image } from "~/components/image";
 import { Indicator } from "~/components/indicator";
@@ -34,7 +35,7 @@ const programs = [
 
 export default function Service() {
   return (
-    <>
+    <Container>
       <div className="page-container" id="1">
         <div id="background">
           <div className="filter" />
@@ -758,6 +759,6 @@ export default function Service() {
 
       <Footer />
       <Indicator items={["Marketing & Promotion", "Entertainment", "Education Content"]} />
-    </>
+    </Container>
   );
 }

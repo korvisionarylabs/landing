@@ -1,3 +1,4 @@
+import { Link } from "@remix-run/react";
 import { useEffect, useState } from "react";
 import "~/styles/indicator.css";
 
@@ -9,7 +10,7 @@ const Indicator = ({ items }: IndicatorProps) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = document.body.scrollTop;
+      // const scrollPosition = window.scrollY;
       // console.log("test", scrollPosition);
 
       const elements = document.querySelectorAll(".page-container");
@@ -24,17 +25,17 @@ const Indicator = ({ items }: IndicatorProps) => {
       }
     };
 
-    document.body.addEventListener("scroll", handleScroll, { passive: true });
-    return () => document.body.removeEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <div id="indicator">
       {items.map((item, index) => (
-        <a key={index} href={`#${index + 1}`} className={`item ${activeId === `${index + 1}` ? "active" : ""}`}>
+        <Link key={index} to={`#${index + 1}`} className={`item ${activeId === `${index + 1}` ? "active" : ""}`}>
           <p className="body-s">{item}</p>
           <div className="icon" />
-        </a>
+        </Link>
       ))}
     </div>
   );

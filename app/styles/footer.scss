@@ -3,9 +3,9 @@
 #footer {
   flex: 1;
   min-height: 100dvh;
-  // scroll-snap-align: start end;
-  width: 100%;
+  width: 100dvw;
   align-items: center;
+  overflow: hidden;
 
   .inner {
     max-width: $max-width;

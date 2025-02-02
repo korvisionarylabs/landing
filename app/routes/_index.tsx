@@ -1,5 +1,5 @@
 import { type MetaFunction, NavLink } from "@remix-run/react";
-import { useEffect, useState } from "react";
+import { Container } from "~/components/container";
 import { Footer } from "~/components/footer";
 import { Indicator } from "~/components/indicator";
 import { Partners } from "~/components/partners";
@@ -82,7 +82,7 @@ const xrProductions = [
 
 export default function Home() {
   return (
-    <>
+    <Container>
       <div className="page-container" id="1">
         <div id="background">
           <div className="filter" />
@@ -341,6 +341,6 @@ export default function Home() {
 
       <Footer />
       <Indicator items={["Introduce", "With Your Vision", "Production", "V-DORM", "Partners", "Contact"]} />
-    </>
+    </Container>
   );
 }

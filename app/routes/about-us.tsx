@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/react";
+import { Container } from "~/components/container";
 import { Footer } from "~/components/footer";
 import "~/styles/about-us.css";
 
@@ -207,7 +208,7 @@ const activities = [
 
 export default function AboutUs() {
   return (
-    <>
+    <Container>
       <div className="page-container">
         <div id="background">
           <div className="filter" />
@@ -627,6 +628,6 @@ export default function AboutUs() {
       </div>
 
       <Footer />
-    </>
+    </Container>
   );
 }

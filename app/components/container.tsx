@@ -1,6 +1,6 @@
-import { NavLink, Outlet } from "@remix-run/react";
-
 import "~/styles/navbar.css";
+
+import { NavLink } from "@remix-run/react";
 
 const pages = [
   {
@@ -21,7 +21,10 @@ const pages = [
   },
 ];
 
-export default function Navbar() {
+interface ContainerProps {
+  children?: React.ReactNode;
+}
+const Container: React.FC<ContainerProps> = ({ children }) => {
   return (
     <>
       <div id="navbar-container">
@@ -61,7 +64,9 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <Outlet />
+      {children}
     </>
   );
-}
+};
+
+export { Container };
