@@ -388,7 +388,9 @@
   width: 102px;
   height: 102px;
   border-radius: 51px;
-  background-color: #25262E;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(https://assets.visionarylabstech.com/about-us/profile.jpg);
 }
 #page.ourteam .container .left .box.person .personal {
   flex: 1;

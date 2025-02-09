@@ -213,7 +213,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="page-container" id="4">
+      {/* <div className="page-container" id="4">
         <div id="background">
           <div className="filter" />
           <img src="https://assets.visionarylabstech.com/home/vdorm.png" alt="" />
@@ -231,9 +231,9 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="page-container" id="5">
+      <div className="page-container" id="4">
         <div id="page" className="partners">
           <div className="title">
             <h1 className="title-l gradient">Partners</h1>
@@ -245,7 +245,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="page-container" id="6">
+      <div className="page-container" id="5">
         <div id="page" className="contact">
           <div className="container">
             <div className="left">
@@ -340,7 +340,7 @@ export default function Home() {
       </div>
 
       <Footer />
-      <Indicator items={["Introduce", "With Your Vision", "Production", "V-DORM", "Partners", "Contact"]} />
+      <Indicator items={["Introduce", "With Your Vision", "Production", /* "V-DORM", */ "Partners", "Contact"]} />
     </Container>
   );
 }

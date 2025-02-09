@@ -245,7 +245,10 @@
           width: 102px;
           height: 102px;
           border-radius: 51px;
-          background-color: $gs-7;
+          // background-color: $gs-7;
+          background-size: cover;
+          background-position: center center;
+          background-image: url(https://assets.visionarylabstech.com/about-us/profile.jpg);
         }
 
         .personal {
